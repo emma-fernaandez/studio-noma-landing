@@ -1,4 +1,4 @@
-import React from 'react';
+import Navbar from '@/components/landing/Navbar';
 import Hero from '@/components/landing/Hero';
 import ValueProposition from '@/components/landing/ValueProposition';
 import Projects from '@/components/landing/Projects';
@@ -10,6 +10,7 @@ import Footer from '@/components/landing/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#100E0E]">
+      <Navbar />
       <Hero />
       <ValueProposition />
       <Projects />

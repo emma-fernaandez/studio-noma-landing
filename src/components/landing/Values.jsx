@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const values = [
@@ -29,7 +29,7 @@ export default function Values() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 bg-[#FFFBFB]/[0.02]">
+    <section id="valores" className="py-32 px-6 md:px-12 lg:px-24 bg-[#FFFBFB]/[0.02]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}

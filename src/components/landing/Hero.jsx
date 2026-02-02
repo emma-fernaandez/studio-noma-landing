@@ -23,7 +23,8 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]"
+          className="text-[#FFFBFB] leading-[0.9]"
+          style={{ fontSize: '5.5rem' }}
         >
           DONDE LAS
           <br />
@@ -40,7 +41,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[#FFFBFB]/60 text-lg md:text-xl max-w-md leading-relaxed"
+          className="text-[#FFFBFB]/60 max-w-md"
+          style={{ fontSize: '1.5rem', lineHeight: '2rem' }}
         >
           Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
         </motion.p>

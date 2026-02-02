@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -6,23 +5,23 @@ import { useRef } from 'react';
 const features = [
   {
     number: "01",
-    title: "IDENTIDAD PROPIA",
-    description: "CADA PROYECTO REFLEJA LA ESENCIA ÚNICA DE TU MARCA. NADA DE PLANTILLAS GENÉRICAS."
+    title: "COMENZAMOS CON DESCUBRIMIENTO PROFUNDO",
+    description: "Nuestro equipo recopila información que se convierte en la base para un diseño significativo y relevante. Esta fase establece la dirección para una identidad fuerte y auténtica."
   },
   {
     number: "02",
-    title: "PERFORMANCE REAL",
-    description: "SITIOS RÁPIDOS QUE NO SACRIFICAN ESTÉTICA. CÓDIGO LIMPIO, RESULTADOS MEDIBLES."
+    title: "DAMOS FORMA AL LENGUAJE VISUAL",
+    description: "Nuestros diseñadores y directores de arte trabajan juntos para crear logos, elementos de marca y sistemas visuales. Desde tipografía hasta paletas de colores, cada elemento se construye para reflejar la personalidad de tu marca."
   },
   {
     number: "03",
-    title: "CONVERSIÓN",
-    description: "DISEÑAMOS PARA QUE TUS VISITANTES SE CONVIERTAN EN CLIENTES. CADA PIXEL TIENE PROPÓSITO."
+    title: "DONDE EL MOVIMIENTO SE ENCUENTRA CON LA EXPRESIÓN",
+    description: "Para hacer que tu marca cobre vida, los diseñadores de movimiento e ilustradores crean activos visuales que agregan profundidad y carácter. Las animaciones, íconos e ilustraciones se adaptan para apoyar la narrativa y el compromiso."
   },
   {
     number: "04",
-    title: "EVOLUCIÓN",
-    description: "EXPERIENCIAS WEB QUE PERDURAN Y CRECEN CONTIGO. PENSAMOS A LARGO PLAZO."
+    title: "ENTREGAMOS CON PRECISIÓN Y CUIDADO",
+    description: "Los gestores de proyecto aseguran una colaboración fluida, ciclos de retroalimentación oportunos y comunicación clara. Recibirás pautas de marca completas y activos listos para usar para lanzar con confianza."
   }
 ];
 
@@ -31,47 +30,41 @@ export default function ValueProposition() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 relative">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
+    <section className="py-32 px-8 md:px-16 relative bg-[#FFFBFB]/[0.02]">
+      <div className="max-w-7xl mx-auto">
+        {/* Título centrado */}
+        <motion.h2
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="text-4xl md:text-5xl lg:text-6xl text-[#FFFBFB] leading-[1.1] text-center mb-20 max-w-5xl mx-auto"
         >
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
-              POR QUÉ NOSOTROS
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  max-w-4xl uppercase">
-            NO HACEMOS SITIOS WEB.
-            <br />
-            <span className="text-[#682DD6]/60">TRANSFORMAMOS PRESENCIAS DIGITALES.</span>
-          </h2>
-        </motion.div>
+          DISEÑADORES APASIONADOS APORTAN IDEAS INNOVADORAS Y FRESCAS
+        </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-px bg-[#FFFBFB]/10">
+        {/* Grid 2x2 */}
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           {features.map((feature, index) => (
             <motion.div
               key={feature.number}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className="bg-[#100E0E] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
+              className="space-y-4"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-[#FFE77A] text-lg ">
-                  {feature.number}
+              {/* Número y título */}
+              <div className="flex items-start gap-4">
+                <span className="text-[#FFFBFB]/40 text-sm font-number">
+                  ({feature.number})
                 </span>
-                <div className="h-px flex-1 bg-[#FFFBFB]/10" />
+                <h3 className="text-[#FFFBFB] text-base md:text-lg font-bold uppercase tracking-tight">
+                  {feature.title}
+                </h3>
               </div>
-              <h3 className="text-xl md:text-2xl text-[#FFFBFB]  mb-4 ">
-                {feature.title}
-              </h3>
-              <p className="text-[#FFFBFB]/50 text-sm leading-relaxed">
+
+              {/* Descripción */}
+              <p className="text-[#FFFBFB]/60 text-sm leading-relaxed pl-12">
                 {feature.description}
               </p>
             </motion.div>

@@ -24,7 +24,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-3 mb-2">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em] uppercase">
+            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em]">
               STUDIO NOMA
             </span>
           </div>
@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] font-black text-[#FFFBFB] leading-[0.85] tracking-tighter uppercase font-pragmatica"
+            className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] font-bold text-[#FFFBFB] leading-[0.85] tracking-tighter"
           >
             DONDE LAS
             <br />
@@ -52,7 +52,7 @@ export default function Hero() {
           className="grid md:grid-cols-2 gap-12 max-w-5xl"
         >
           <div>
-            <p className="text-[#FFFBFB]/60 text-sm leading-relaxed uppercase tracking-wide">
+            <p className="text-[#FFFBFB]/60 text-sm leading-relaxed tracking-wide">
               TRANSFORMAMOS IDEAS EN EXPERIENCIAS DIGITALES ÚNICAS. SIN PLANTILLAS. SIN GENÉRICOS. SOLO CÓDIGO QUE REPRESENTA TU IDENTIDAD.
             </p>
           </div>
@@ -60,15 +60,15 @@ export default function Hero() {
           <div className="flex flex-col gap-4">
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#1E1D1D] font-black hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#1E1D1D] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
-              <span className="text-sm tracking-wider uppercase">INICIAR PROYECTO</span>
+              <span className="text-sm tracking-wider">INICIAR PROYECTO</span>
             </a>
             <a
               href="#servicios"
-              className="inline-flex items-center justify-center px-10 py-5 border-2 border-[#FFFBFB]/20 text-[#FFFBFB] font-black hover:border-[#FFE77A] hover:text-[#FFE77A] transition-all duration-300"
+              className="inline-flex items-center justify-center px-10 py-5 border-2 border-[#FFFBFB]/20 text-[#FFFBFB] hover:border-[#FFE77A] hover:text-[#FFE77A] transition-all duration-300"
             >
-              <span className="text-sm tracking-wider uppercase">VER SERVICIOS</span>
+              <span className="text-sm tracking-wider">VER SERVICIOS</span>
             </a>
           </div>
         </motion.div>

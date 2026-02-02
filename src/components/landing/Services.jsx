@@ -100,7 +100,7 @@ export default function Services() {
 
               <ul className="space-y-3 mb-10">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[#682DD6] text-xs uppercase tracking-wide">
+                  <li key={i} className="flex items-start gap-3 text-[#FFFBFB] text-xs uppercase tracking-wide">
                     <span className="text-[#FFE77A] mt-1">•</span>
                     {feature}
                   </li>

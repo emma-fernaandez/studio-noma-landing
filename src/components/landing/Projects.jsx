@@ -96,7 +96,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   
-                  <p className="text-[#682DD6] text-sm leading-relaxed mb-8 uppercase tracking-wide">
+                  <p className="text-[#FFFBFB] text-sm leading-relaxed mb-8 uppercase tracking-wide">
                     {project.description}
                   </p>
 

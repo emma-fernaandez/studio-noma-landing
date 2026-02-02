@@ -26,8 +26,8 @@ export default function Contact() {
             </span>
           </h2>
 
-          <p className="text-[#682DD6] text-sm max-w-xl mx-auto mb-12 leading-relaxed">
-            ¿TIENES UN PROYECTO EN MENTE? HABLEMOS. 
+          <p className="text-[#FFFBFB] text-sm max-w-xl mx-auto mb-12 leading-relaxed">
+            ¿TIENES UN PROYECTO EN MENTE? HABLEMOS.
             SIN COMPROMISO, SIN TECNICISMOS. SOLO RESULTADOS.
           </p>
 

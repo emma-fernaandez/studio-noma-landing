@@ -52,7 +52,7 @@ export default function Hero() {
           className="grid md:grid-cols-2 gap-12 max-w-5xl"
         >
           <div>
-            <p className="text-[#682DD6] text-sm leading-relaxed tracking-wide">
+            <p className="text-[#FFFBFB] text-sm leading-relaxed tracking-wide">
               TRANSFORMAMOS IDEAS EN EXPERIENCIAS DIGITALES ÚNICAS. SIN PLANTILLAS. SIN GENÉRICOS. SOLO CÓDIGO QUE REPRESENTA TU IDENTIDAD.
             </p>
           </div>

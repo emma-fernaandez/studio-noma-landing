@@ -44,7 +44,7 @@ export default function Values() {
               FILOSOFÍA
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFFBFB] leading-[0.9] tracking-tighter uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
             VALORES QUE GUÍAN
             <br />
             <span className="text-[#FFFBFB]/30">CADA DECISIÓN.</span>
@@ -61,12 +61,12 @@ export default function Values() {
               className="bg-[#1E1D1D] p-10 group hover:bg-[#FFFBFB]/[0.02] transition-all duration-500"
             >
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-[#FFE77A] text-sm font-black">
+                <span className="text-[#FFE77A] text-sm ">
                   0{index + 1}
                 </span>
                 <div className="h-px flex-1 bg-[#FFFBFB]/10" />
               </div>
-              <h3 className="text-xl md:text-2xl text-[#FFFBFB] font-black mb-2 tracking-tight uppercase">
+              <h3 className="text-xl md:text-2xl text-[#FFFBFB]  mb-2  uppercase">
                 {value.spanish}
               </h3>
               <span className="text-[#FFFBFB]/30 text-xs mb-4 block italic">

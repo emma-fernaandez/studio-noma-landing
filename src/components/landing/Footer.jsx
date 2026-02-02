@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-              <span className="text-[#FFFBFB] font-black text-lg tracking-tight uppercase">
+              <span className="text-[#FFFBFB]  text-lg  uppercase">
                 STUDIO NOMA
               </span>
             </div>
@@ -20,13 +20,13 @@ export default function Footer() {
           <div className="flex items-center gap-8">
             <a 
               href="#servicios" 
-              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider font-black"
+              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
             >
               SERVICIOS
             </a>
             <a 
               href="#contacto" 
-              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider font-black"
+              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
             >
               CONTACTO
             </a>

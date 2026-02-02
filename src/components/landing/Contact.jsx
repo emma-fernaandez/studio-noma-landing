@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowUpRight, Mail } from 'lucide-react';
 
@@ -18,15 +18,15 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] font-black text-[#FFFBFB] leading-[0.85] mb-16 tracking-tighter uppercase">
+          <h2 className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-16">
             TRABAJA
             <br />
             <span className="text-[#FFE77A]">
               CON NOSOTROS
             </span>
           </h2>
-          
-          <p className="text-[#FFFBFB]/60 text-sm max-w-xl mx-auto mb-12 leading-relaxed uppercase tracking-wide">
+
+          <p className="text-[#FFFBFB]/60 text-sm max-w-xl mx-auto mb-12 leading-relaxed">
             ¿TIENES UN PROYECTO EN MENTE? HABLEMOS. 
             SIN COMPROMISO, SIN TECNICISMOS. SOLO RESULTADOS.
           </p>
@@ -34,10 +34,10 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-6">
             <a
               href="mailto:hola@studionoma.com"
-              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#1E1D1D] font-black hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#1E1D1D] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
-              <span className="text-sm tracking-wider uppercase">
+              <span className="text-sm">
                 HOLA@STUDIONOMA.COM
               </span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

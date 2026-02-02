@@ -46,7 +46,7 @@ export default function ValueProposition() {
               POR QUÉ NOSOTROS
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFFBFB] leading-[0.9] tracking-tighter max-w-4xl uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  max-w-4xl uppercase">
             NO HACEMOS SITIOS WEB.
             <br />
             <span className="text-[#FFFBFB]/30">TRANSFORMAMOS PRESENCIAS DIGITALES.</span>
@@ -63,12 +63,12 @@ export default function ValueProposition() {
               className="bg-[#1E1D1D] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-[#FFE77A] text-lg font-black">
+                <span className="text-[#FFE77A] text-lg ">
                   {feature.number}
                 </span>
                 <div className="h-px flex-1 bg-[#FFFBFB]/10" />
               </div>
-              <h3 className="text-xl md:text-2xl text-[#FFFBFB] font-black mb-4 tracking-tight">
+              <h3 className="text-xl md:text-2xl text-[#FFFBFB]  mb-4 ">
                 {feature.title}
               </h3>
               <p className="text-[#FFFBFB]/50 text-sm leading-relaxed">

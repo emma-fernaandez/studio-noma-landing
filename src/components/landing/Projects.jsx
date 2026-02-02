@@ -61,7 +61,7 @@ export default function Projects() {
               PROYECTOS DESTACADOS
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFFBFB] leading-[0.9] tracking-tighter uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
             CASOS DE
             <br />
             <span className="text-[#FFFBFB]/30">ÉXITO</span>
@@ -78,7 +78,7 @@ export default function Projects() {
               className="relative group"
             >
               {/* Project number */}
-              <div className="absolute -left-4 md:-left-12 top-0 text-8xl md:text-9xl font-black text-[#FFFBFB]/5 leading-none">
+              <div className="absolute -left-4 md:-left-12 top-0 text-8xl md:text-9xl  text-[#FFFBFB]/5 leading-none">
                 {project.number}
               </div>
 
@@ -86,13 +86,13 @@ export default function Projects() {
                 {/* Project info */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="text-[#FFE77A] text-sm font-black">
+                    <span className="text-[#FFE77A] text-sm ">
                       {project.number}
                     </span>
                     <div className="h-px w-12 bg-[#FFE77A]" />
                   </div>
                   
-                  <h3 className="text-2xl md:text-4xl font-black text-[#FFFBFB] mb-6 tracking-tight leading-tight uppercase">
+                  <h3 className="text-2xl md:text-4xl  text-[#FFFBFB] mb-6  leading-tight uppercase">
                     {project.title}
                   </h3>
                   
@@ -105,7 +105,7 @@ export default function Projects() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-4 py-2 bg-[#FFFBFB]/5 text-[#FFFBFB] text-xs font-black tracking-wider uppercase"
+                        className="px-4 py-2 bg-[#FFFBFB]/5 text-[#FFFBFB] text-xs  tracking-wider uppercase"
                       >
                         {tag}
                       </span>
@@ -119,14 +119,14 @@ export default function Projects() {
                         <div className="text-xs text-[#FFFBFB]/40 mb-2 uppercase tracking-wider">
                           {stat.label}
                         </div>
-                        <div className="text-xl font-black text-[#FFFBFB]">
+                        <div className="text-xl  text-[#FFFBFB]">
                           {stat.value}
                         </div>
                       </div>
                     ))}
                   </div>
 
-                  <button className="inline-flex items-center gap-3 text-[#FFE77A] text-sm font-black hover:gap-5 transition-all duration-300 uppercase tracking-wider">
+                  <button className="inline-flex items-center gap-3 text-[#FFE77A] text-sm  hover:gap-5 transition-all duration-300 uppercase tracking-wider">
                     VER PROYECTO
                     <ExternalLink className="w-4 h-4" />
                   </button>

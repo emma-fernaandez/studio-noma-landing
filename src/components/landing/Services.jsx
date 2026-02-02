@@ -50,7 +50,7 @@ export default function Services() {
               SERVICIOS
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFFBFB] leading-[0.9] tracking-tighter uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
             NUESTROS
             <br />
             <span className="text-[#FFFBFB]/30">SERVICIOS</span>
@@ -75,13 +75,13 @@ export default function Services() {
               )}
 
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-[#FFE77A] text-sm font-black">
+                <span className="text-[#FFE77A] text-sm ">
                   {service.level.split(' ')[1]}
                 </span>
                 <div className="h-px flex-1 bg-[#FFFBFB]/10" />
               </div>
               
-              <h3 className="text-xl text-[#FFFBFB] font-black mb-4 tracking-tight uppercase">
+              <h3 className="text-xl text-[#FFFBFB]  mb-4 tracking-tight uppercase">
                 {service.title}
               </h3>
               
@@ -90,7 +90,7 @@ export default function Services() {
               </p>
 
               <div className="mb-8 pb-8 border-b border-[#FFFBFB]/10">
-                <div className="text-3xl text-[#FFE77A] font-black mb-2">
+                <div className="text-3xl text-[#FFE77A]  mb-2">
                   {service.price}
                 </div>
                 <div className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider">
@@ -109,7 +109,7 @@ export default function Services() {
 
               <a
                 href="#contacto"
-                className="inline-flex items-center gap-2 text-xs font-black transition-all duration-300 group-hover:gap-4 text-[#FFE77A] tracking-wider uppercase"
+                className="inline-flex items-center gap-2 text-xs  transition-all duration-300 group-hover:gap-4 text-[#FFE77A] tracking-wider uppercase"
               >
                 CONSULTAR
                 <ArrowUpRight className="w-4 h-4" />

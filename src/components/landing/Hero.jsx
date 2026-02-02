@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] font-black text-[#FFFBFB] leading-[0.85] tracking-tighter uppercase"
+            className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] font-black text-[#FFFBFB] leading-[0.85] tracking-tighter uppercase font-pragmatica"
           >
             DONDE LAS
             <br />

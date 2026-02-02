@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative px-6 md:px-12 lg:px-24 pt-32 pb-20 overflow-hidden bg-[#100E0E]">
+    <section className="min-h-screen flex flex-col justify-between relative px-8 md:px-16 pt-32 pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen">
         <iframe
@@ -16,14 +16,14 @@ export default function Hero() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto w-full relative z-10">
-        {/* Hero Title */}
-        <div className="overflow-hidden mb-16">
+      <div className="relative z-10">
+        {/* Hero Title - Alineado a la izquierda */}
+        <div className="mb-8">
           <motion.h1
-            initial={{ y: 60, opacity: 0 }}
+            initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-12"
+            className="text-6xl md:text-8xl lg:text-9xl text-[#FFFBFB] leading-[0.9] mb-6"
           >
             DONDE LAS
             <br />
@@ -35,36 +35,36 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-[#FFFBFB]/60 text-base md:text-lg max-w-2xl leading-relaxed tracking-wide"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-[#FFFBFB]/60 text-lg md:text-xl max-w-2xl leading-relaxed"
           >
-            TRANSFORMAMOS IDEAS EN EXPERIENCIAS DIGITALES ÚNICAS. SIN PLANTILLAS. SIN GENÉRICOS. SOLO CÓDIGO QUE REPRESENTA TU IDENTIDAD.
+            Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
           </motion.p>
         </div>
-
-        {/* Simple Text Links */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="flex flex-col sm:flex-row gap-8 sm:gap-16"
-        >
-          <a
-            href="#proyectos"
-            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm md:text-base tracking-wide transition-all duration-300 hover:gap-4"
-          >
-            NUESTROS PROYECTOS
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
-          <a
-            href="#servicios"
-            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm md:text-base tracking-wide transition-all duration-300 hover:gap-4"
-          >
-            EXPLORAR SERVICIOS
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
-        </motion.div>
       </div>
+
+      {/* Simple Text Links - Parte inferior izquierda */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="relative z-10 flex flex-col sm:flex-row gap-6 sm:gap-12"
+      >
+        <a
+          href="#proyectos"
+          className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm transition-all duration-300 hover:gap-3"
+        >
+          Nuestros Proyectos
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </a>
+        <a
+          href="#servicios"
+          className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm transition-all duration-300 hover:gap-3"
+        >
+          Explorar Servicios
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </a>
+      </motion.div>
     </section>
   );
 }

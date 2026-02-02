@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Logo from '@/assets/logo.svg';
+import logoSvg from '../../assets/logo.svg';
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');
 
   const navLinks = [
-    { name: 'ABOUT', href: '#valores' },
-    { name: 'WORKS', href: '#proyectos' },
-    { name: 'SERVICES', href: '#servicios' },
-    { name: 'CONTACT', href: '#contacto' },
+    { name: 'About', href: '#valores' },
+    { name: 'Works', href: '#proyectos' },
+    { name: 'Services', href: '#servicios' },
+    { name: 'Contact', href: '#contacto' },
   ];
 
   return (
@@ -19,25 +19,25 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-[#100E0E]"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-        <div className="flex items-center justify-between h-20 md:h-24">
+      <div className="px-8 md:px-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
             <img
-              src={Logo}
+              src={logoSvg}
               alt="Studio Noma"
-              className="h-5 md:h-6 w-auto"
+              className="h-5 w-auto"
             />
           </a>
 
           {/* Navigation Links */}
-          <div className="flex items-center gap-8 md:gap-12">
+          <div className="flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setActiveLink(link.name)}
-                className="relative text-[#FFFBFB] text-xs md:text-sm tracking-wide transition-opacity duration-300 hover:opacity-60"
+                className="relative text-[#FFFBFB] text-sm transition-opacity duration-300 hover:opacity-60"
               >
                 {link.name}
                 {activeLink === link.name && (

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative px-6 md:px-12 lg:px-24 py-20 overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center relative px-6 md:px-12 lg:px-24 py-20 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-30">
+      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen">
         <iframe
           src='https://my.spline.design/claritystream-gHPaerA2pIP5nZargemLMtPJ/'
           width='100%'

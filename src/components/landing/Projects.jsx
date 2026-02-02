@@ -46,7 +46,7 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="proyectos" className="py-32 px-6 md:px-12 lg:px-24 relative">
+    <section id="proyectos" className="py-32 px-6 md:px-12 lg:px-24 relative scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         <motion.div
           ref={ref}

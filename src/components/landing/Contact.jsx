@@ -7,7 +7,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contacto" className="py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <section id="contacto" className="py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden scroll-mt-20">
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#682DD6]/10 via-[#FFE77A]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
       

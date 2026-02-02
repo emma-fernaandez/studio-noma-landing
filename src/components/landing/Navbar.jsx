@@ -37,7 +37,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setActiveLink(link.name)}
-                className="relative text-[#FFFBFB] text-sm transition-opacity duration-300 hover:opacity-60"
+                className="relative text-[#FFFBFB] text-sm font-normal transition-opacity duration-300 hover:opacity-60"
               >
                 {link.name}
                 {activeLink === link.name && (

@@ -56,7 +56,7 @@ export default function ValueProposition() {
             >
               {/* Número y título */}
               <div className="flex items-start gap-4">
-                <span className="text-[#FFFBFB]/40 text-sm font-number">
+                <span className="text-[#FFFBFB]/40 text-sm font-normal font-number">
                   ({feature.number})
                 </span>
                 <h3 className="text-[#FFFBFB] text-base md:text-lg font-bold uppercase tracking-tight">
@@ -65,7 +65,7 @@ export default function ValueProposition() {
               </div>
 
               {/* Descripción */}
-              <p className="text-[#FFFBFB]/60 text-sm leading-relaxed pl-12 font-semibold">
+              <p className="text-[#FFFBFB]/60 text-sm leading-relaxed pl-12 font-normal">
                 {feature.description}
               </p>
             </motion.div>

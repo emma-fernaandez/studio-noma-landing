@@ -24,7 +24,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-3 mb-2">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em]">
+            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em]">
               STUDIO NOMA
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function Hero() {
           className="grid md:grid-cols-2 gap-12 max-w-5xl"
         >
           <div>
-            <p className="text-[#FFFBFB]/60 text-sm leading-relaxed tracking-wide">
+            <p className="text-[#682DD6] text-sm leading-relaxed tracking-wide">
               TRANSFORMAMOS IDEAS EN EXPERIENCIAS DIGITALES ÚNICAS. SIN PLANTILLAS. SIN GENÉRICOS. SOLO CÓDIGO QUE REPRESENTA TU IDENTIDAD.
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4">
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#151414] hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#100E0E] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <span className="text-sm tracking-wider">INICIAR PROYECTO</span>
             </a>

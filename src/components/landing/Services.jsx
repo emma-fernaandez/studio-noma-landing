@@ -46,14 +46,14 @@ export default function Services() {
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em] uppercase">
+            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
               SERVICIOS
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
             NUESTROS
             <br />
-            <span className="text-[#FFFBFB]/30">SERVICIOS</span>
+            <span className="text-[#682DD6]/60">SERVICIOS</span>
           </h2>
         </motion.div>
 
@@ -64,7 +64,7 @@ export default function Services() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className={`relative p-10 transition-all duration-500 group bg-[#151414] hover:bg-[#FFFBFB]/[0.02] ${
+              className={`relative p-10 transition-all duration-500 group bg-[#100E0E] hover:bg-[#FFFBFB]/[0.02] ${
                 service.featured ? 'bg-[#FFE77A]/[0.03]' : ''
               }`}
             >
@@ -93,14 +93,14 @@ export default function Services() {
                 <div className="text-3xl text-[#FFE77A] mb-2 font-number">
                   {service.price}
                 </div>
-                <div className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider font-number">
+                <div className="text-[#682DD6]/60 text-xs uppercase tracking-wider font-number">
                   {service.time}
                 </div>
               </div>
 
               <ul className="space-y-3 mb-10">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[#FFFBFB]/60 text-xs uppercase tracking-wide">
+                  <li key={i} className="flex items-start gap-3 text-[#682DD6] text-xs uppercase tracking-wide">
                     <span className="text-[#FFE77A] mt-1">•</span>
                     {feature}
                   </li>

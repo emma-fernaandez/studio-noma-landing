@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         
         :root {
-          --color-dark: #151414;
+          --color-dark: #100E0E;
           --color-yellow: #FFE77A;
           --color-light: #FFFBFB;
           --color-violet: #682DD6;

@@ -57,14 +57,14 @@ export default function Projects() {
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em] uppercase">
+            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
               PROYECTOS DESTACADOS
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
             CASOS DE
             <br />
-            <span className="text-[#FFFBFB]/30">ÉXITO</span>
+            <span className="text-[#682DD6]/60">ÉXITO</span>
           </h2>
         </motion.div>
 
@@ -96,7 +96,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   
-                  <p className="text-[#FFFBFB]/60 text-sm leading-relaxed mb-8 uppercase tracking-wide">
+                  <p className="text-[#682DD6] text-sm leading-relaxed mb-8 uppercase tracking-wide">
                     {project.description}
                   </p>
 
@@ -116,7 +116,7 @@ export default function Projects() {
                   <div className="grid grid-cols-3 gap-6 mb-8 pb-8 border-b border-[#FFFBFB]/10">
                     {project.stats.map((stat) => (
                       <div key={stat.label}>
-                        <div className="text-xs text-[#FFFBFB]/40 mb-2 uppercase tracking-wider">
+                        <div className="text-xs text-[#FFE77A]/70 mb-2 uppercase tracking-wider">
                           {stat.label}
                         </div>
                         <div className="text-xl text-[#FFFBFB] font-number">
@@ -137,7 +137,7 @@ export default function Projects() {
                   <div 
                     className="aspect-[4/3] border-2 border-[#FFFBFB]/10 relative overflow-hidden hover:border-[#FFE77A]/30 transition-all duration-500"
                     style={{
-                      background: '#151414',
+                      background: '#100E0E',
                     }}
                   >
                     {/* Mockup placeholder */}

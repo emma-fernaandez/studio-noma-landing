@@ -42,14 +42,14 @@ export default function ValueProposition() {
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em] uppercase">
+            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
               POR QUÉ NOSOTROS
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  max-w-4xl uppercase">
             NO HACEMOS SITIOS WEB.
             <br />
-            <span className="text-[#FFFBFB]/30">TRANSFORMAMOS PRESENCIAS DIGITALES.</span>
+            <span className="text-[#682DD6]/60">TRANSFORMAMOS PRESENCIAS DIGITALES.</span>
           </h2>
         </motion.div>
 
@@ -60,7 +60,7 @@ export default function ValueProposition() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className="bg-[#151414] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
+              className="bg-[#100E0E] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-[#FFE77A] text-lg ">

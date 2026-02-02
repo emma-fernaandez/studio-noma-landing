@@ -40,14 +40,14 @@ export default function Values() {
         >
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
-            <span className="text-[#FFFBFB]/40 text-xs tracking-[0.3em] uppercase">
+            <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
               FILOSOFÍA
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
             VALORES QUE GUÍAN
             <br />
-            <span className="text-[#FFFBFB]/30">CADA DECISIÓN.</span>
+            <span className="text-[#682DD6]/60">CADA DECISIÓN.</span>
           </h2>
         </motion.div>
 
@@ -58,7 +58,7 @@ export default function Values() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-              className="bg-[#151414] p-10 group hover:bg-[#FFFBFB]/[0.02] transition-all duration-500"
+              className="bg-[#100E0E] p-10 group hover:bg-[#FFFBFB]/[0.02] transition-all duration-500"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-[#FFE77A] text-sm ">
@@ -69,7 +69,7 @@ export default function Values() {
               <h3 className="text-xl md:text-2xl text-[#FFFBFB]  mb-2  uppercase">
                 {value.spanish}
               </h3>
-              <span className="text-[#FFFBFB]/30 text-xs mb-4 block italic">
+              <span className="text-[#682DD6]/60 text-xs mb-4 block italic">
                 {value.italian}
               </span>
               <p className="text-[#FFFBFB]/50 text-xs leading-relaxed uppercase tracking-wide">

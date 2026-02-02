@@ -12,7 +12,7 @@ export default function Footer() {
                 STUDIO NOMA
               </span>
             </div>
-            <span className="text-[#FFFBFB]/40 text-xs uppercase tracking-wide">
+            <span className="text-[#FFE77A]/70 text-xs uppercase tracking-wide">
               DISEÑO & DESARROLLO WEB
             </span>
           </div>
@@ -20,13 +20,13 @@ export default function Footer() {
           <div className="flex items-center gap-8">
             <a 
               href="#servicios" 
-              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
+              className="text-[#FFE77A]/70 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
             >
               SERVICIOS
             </a>
             <a 
               href="#contacto" 
-              className="text-[#FFFBFB]/40 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
+              className="text-[#FFE77A]/70 text-xs hover:text-[#FFE77A] transition-colors duration-300 uppercase tracking-wider "
             >
               CONTACTO
             </a>
@@ -36,10 +36,10 @@ export default function Footer() {
         <div className="h-px bg-[#FFFBFB]/10 mb-8" />
 
         <div className="flex justify-between items-center">
-          <span className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider">
+          <span className="text-[#682DD6]/60 text-xs uppercase tracking-wider">
             © {new Date().getFullYear()} STUDIO NOMA
           </span>
-          <span className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider">
+          <span className="text-[#682DD6]/60 text-xs uppercase tracking-wider">
             MADE WITH CODE
           </span>
         </div>

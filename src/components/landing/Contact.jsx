@@ -26,7 +26,7 @@ export default function Contact() {
             </span>
           </h2>
 
-          <p className="text-[#FFFBFB]/60 text-sm max-w-xl mx-auto mb-12 leading-relaxed">
+          <p className="text-[#682DD6] text-sm max-w-xl mx-auto mb-12 leading-relaxed">
             ¿TIENES UN PROYECTO EN MENTE? HABLEMOS. 
             SIN COMPROMISO, SIN TECNICISMOS. SOLO RESULTADOS.
           </p>
@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-6">
             <a
               href="mailto:hola@studionoma.com"
-              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#151414] hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#100E0E] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
               <span className="text-sm">
@@ -43,7 +43,7 @@ export default function Contact() {
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             
-            <div className="flex items-center gap-2 text-[#FFFBFB]/30 text-xs uppercase tracking-wider font-number">
+            <div className="flex items-center gap-2 text-[#682DD6]/60 text-xs uppercase tracking-wider font-number">
               <div className="w-1.5 h-1.5 rounded-full bg-[#FFE77A]" />
               RESPUESTA EN 24H
             </div>

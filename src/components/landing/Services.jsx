@@ -90,10 +90,10 @@ export default function Services() {
               </p>
 
               <div className="mb-8 pb-8 border-b border-[#FFFBFB]/10">
-                <div className="text-3xl text-[#FFE77A]  mb-2">
+                <div className="text-3xl text-[#FFE77A] mb-2 font-number">
                   {service.price}
                 </div>
-                <div className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider">
+                <div className="text-[#FFFBFB]/30 text-xs uppercase tracking-wider font-number">
                   {service.time}
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
@@ -78,7 +78,7 @@ export default function Projects() {
               className="relative group"
             >
               {/* Project number */}
-              <div className="absolute -left-4 md:-left-12 top-0 text-8xl md:text-9xl  text-[#FFFBFB]/5 leading-none">
+              <div className="absolute -left-4 md:-left-12 top-0 text-8xl md:text-9xl text-[#FFFBFB]/5 leading-none font-number">
                 {project.number}
               </div>
 
@@ -86,7 +86,7 @@ export default function Projects() {
                 {/* Project info */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="text-[#FFE77A] text-sm ">
+                    <span className="text-[#FFE77A] text-sm font-number">
                       {project.number}
                     </span>
                     <div className="h-px w-12 bg-[#FFE77A]" />
@@ -119,7 +119,7 @@ export default function Projects() {
                         <div className="text-xs text-[#FFFBFB]/40 mb-2 uppercase tracking-wider">
                           {stat.label}
                         </div>
-                        <div className="text-xl  text-[#FFFBFB]">
+                        <div className="text-xl text-[#FFFBFB] font-number">
                           {stat.value}
                         </div>
                       </div>

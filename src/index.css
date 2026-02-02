@@ -101,4 +101,25 @@
   p {
     text-align: justify;
   }
+
+  /* Números siempre en Pragmatica Bold */
+  .text-3xl,
+  .text-4xl,
+  .text-5xl,
+  .text-6xl,
+  .text-7xl,
+  .text-8xl,
+  .text-9xl,
+  [class*="price"],
+  [class*="number"] {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* Clase para números */
+  .font-number {
+    font-family: Pragmatica, system-ui, sans-serif !important;
+    font-weight: 700 !important;
+  }
 }

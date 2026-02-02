@@ -43,7 +43,7 @@ export default function Contact() {
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             
-            <div className="flex items-center gap-2 text-[#FFFBFB]/30 text-xs uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-[#FFFBFB]/30 text-xs uppercase tracking-wider font-number">
               <div className="w-1.5 h-1.5 rounded-full bg-[#FFE77A]" />
               RESPUESTA EN 24H
             </div>

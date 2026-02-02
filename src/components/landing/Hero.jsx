@@ -42,7 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-[#FFFBFB]/60 max-w-md"
-          style={{ fontSize: '1.5rem', lineHeight: '2rem' }}
+          style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
         >
           Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
         </motion.p>

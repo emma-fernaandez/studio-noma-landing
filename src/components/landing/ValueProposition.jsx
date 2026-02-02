@@ -30,7 +30,7 @@ export default function ValueProposition() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 px-8 md:px-16 relative bg-[#FFFBFB]/[0.02]">
+    <section className="py-32 px-8 md:px-16 relative">
       <div className="max-w-7xl mx-auto">
         {/* Título centrado */}
         <motion.h2
@@ -38,7 +38,8 @@ export default function ValueProposition() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl lg:text-6xl text-[#FFFBFB] leading-[1.1] text-center mb-20 max-w-5xl mx-auto"
+          className="text-[#FFFBFB] leading-[1.1] text-center mb-20 max-w-5xl mx-auto"
+          style={{ fontSize: '5.5rem' }}
         >
           DISEÑADORES APASIONADOS APORTAN IDEAS INNOVADORAS Y FRESCAS
         </motion.h2>
@@ -64,7 +65,7 @@ export default function ValueProposition() {
               </div>
 
               {/* Descripción */}
-              <p className="text-[#FFFBFB]/60 text-sm leading-relaxed pl-12">
+              <p className="text-[#FFFBFB]/60 text-sm leading-relaxed pl-12 font-semibold">
                 {feature.description}
               </p>
             </motion.div>

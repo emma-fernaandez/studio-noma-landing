@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[#FFFBFB]/60 max-w-md"
+          className="text-[#FFFBFB]/60 max-w-md font-semibold"
           style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
         >
           Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
@@ -56,14 +56,14 @@ export default function Hero() {
         >
           <a
             href="#proyectos"
-            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm transition-all duration-300 hover:gap-3"
+            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             Nuestros Proyectos
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="#servicios"
-            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm transition-all duration-300 hover:gap-3"
+            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             Explorar Servicios
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

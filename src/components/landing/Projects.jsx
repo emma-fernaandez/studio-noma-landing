@@ -137,7 +137,7 @@ export default function Projects() {
                   <div 
                     className="aspect-[4/3] border-2 border-[#FFFBFB]/10 relative overflow-hidden hover:border-[#FFE77A]/30 transition-all duration-500"
                     style={{
-                      background: '#1E1D1D',
+                      background: '#151414',
                     }}
                   >
                     {/* Mockup placeholder */}

@@ -60,7 +60,7 @@ export default function ValueProposition() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className="bg-[#1E1D1D] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
+              className="bg-[#151414] p-10 hover:bg-[#FFFBFB]/[0.02] transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-[#FFE77A] text-lg ">

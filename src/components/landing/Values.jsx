@@ -58,7 +58,7 @@ export default function Values() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-              className="bg-[#1E1D1D] p-10 group hover:bg-[#FFFBFB]/[0.02] transition-all duration-500"
+              className="bg-[#151414] p-10 group hover:bg-[#FFFBFB]/[0.02] transition-all duration-500"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-[#FFE77A] text-sm ">

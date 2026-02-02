@@ -60,7 +60,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4">
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#1E1D1D] hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="inline-flex items-center justify-center px-10 py-5 bg-[#FFE77A] text-[#151414] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <span className="text-sm tracking-wider">INICIAR PROYECTO</span>
             </a>

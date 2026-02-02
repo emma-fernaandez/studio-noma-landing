@@ -64,7 +64,7 @@ export default function Services() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className={`relative p-10 transition-all duration-500 group bg-[#1E1D1D] hover:bg-[#FFFBFB]/[0.02] ${
+              className={`relative p-10 transition-all duration-500 group bg-[#151414] hover:bg-[#FFFBFB]/[0.02] ${
                 service.featured ? 'bg-[#FFE77A]/[0.03]' : ''
               }`}
             >

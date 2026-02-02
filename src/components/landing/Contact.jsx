@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-6">
             <a
               href="mailto:hola@studionoma.com"
-              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#1E1D1D] hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#151414] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
               <span className="text-sm">

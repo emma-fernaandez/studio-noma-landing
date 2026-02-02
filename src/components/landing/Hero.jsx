@@ -16,9 +16,9 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10">
-        {/* Hero Title - Alineado a la izquierda */}
-        <div className="mb-8">
+      <div className="relative z-10 flex justify-end">
+        {/* Hero Title - Alineado a la derecha */}
+        <div className="mb-8 text-right">
           <motion.h1
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -36,19 +36,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-[#FFFBFB]/60 text-lg md:text-xl max-w-2xl leading-relaxed"
+            className="text-[#FFFBFB]/60 text-lg md:text-xl max-w-2xl leading-relaxed ml-auto"
           >
             Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
           </motion.p>
         </div>
       </div>
 
-      {/* Simple Text Links - Parte inferior izquierda */}
+      {/* Simple Text Links - Parte inferior derecha */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="relative z-10 flex flex-col sm:flex-row gap-6 sm:gap-12"
+        className="relative z-10 flex flex-col sm:flex-row gap-6 sm:gap-12 justify-end"
       >
         <a
           href="#proyectos"

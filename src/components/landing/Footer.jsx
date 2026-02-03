@@ -21,7 +21,7 @@ export default function Footer() {
           <img
             src={logoSecondarySvg}
             alt="Studio Noma"
-            className="h-8 w-auto"
+            className="h-12 md:h-16 w-auto"
           />
         </div>
 

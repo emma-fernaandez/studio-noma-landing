@@ -1,4 +1,4 @@
-import logoSecondarySvg from '../../assets/logo-secondary.svg';
+import logoFooter from '../../assets/logo-footer.png';
 
 export default function Footer() {
   const navLinks = [
@@ -18,9 +18,9 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-16">
           <img
-            src={logoSecondarySvg}
+            src={logoFooter}
             alt="Studio Noma"
-            className="h-12 md:h-16 w-auto"
+            className="h-16 md:h-20 w-auto"
           />
         </div>
 

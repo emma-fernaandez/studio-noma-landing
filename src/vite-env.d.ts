@@ -15,3 +15,7 @@ declare module '*.svg?react' {
   const content: FunctionComponent<SVGProps<SVGSVGElement>>;
   export default content;
 }
+
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';

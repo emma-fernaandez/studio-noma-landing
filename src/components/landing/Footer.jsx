@@ -1,63 +1,66 @@
-import logoPrincipal from '../../assets/logo.svg';
+import logoPrincipal from '../../assets/logo-footer.png';
 
 export default function Footer() {
-  const navLinks = [
-    { name: 'ABOUT', href: '#valores' },
-    { name: 'WORKS', href: '#proyectos' },
-    { name: 'SERVICES', href: '#servicios' },
-    { name: 'CONTACT', href: '#contacto' },
-  ];
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <footer className="bg-[#100E0E] text-[#FFFBFB] py-20 px-12">
-      <div>
-        {/* Logo Principal */}
-        <div className="mb-16">
+      <div className="flex flex-col">
+        {/* Top: Contact CTA */}
+        <div className="mb-20">
+          <h2 className="text-5xl md:text-7xl mb-6">
+            LET'S GET CREATIVE<br />IN YOUR SURROUNDINGS
+          </h2>
+          <a
+            href="mailto:hello@studionoma.com"
+            className="text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
+          >
+            HELLO@STUDIONOMA.COM
+          </a>
+        </div>
+
+        {/* Middle: Large Logo */}
+        <div className="mb-16 flex justify-center">
           <img
             src={logoPrincipal}
             alt="Studio Noma"
             className="w-auto"
-            style={{ height: '10rem' }}
+            style={{ height: '12rem' }}
           />
         </div>
 
-        {/* Main content grid */}
-        <div className="grid md:grid-cols-2 gap-16 mb-20">
-          {/* Left: CTA */}
-          <div>
-            <p className="max-w-md font-semibold" style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}>
-              LISTOS PARA TRANSFORMAR TU VISIÓN EN REALIDAD DIGITAL
-            </p>
-          </div>
-
-          {/* Right: Navigation links */}
-          <div className="flex flex-col md:flex-row md:justify-end gap-8 md:gap-12">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
-              >
-                {link.name}
-              </a>
-            ))}
-            <button
-              onClick={scrollToTop}
-              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60 text-left md:text-center"
+        {/* Bottom: Social links and copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-[#FFFBFB]/10 pt-8">
+          {/* Social Links */}
+          <div className="flex gap-8">
+            <a
+              href="https://x.com/studionoma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
             >
-              BACK TO TOP ↑
-            </button>
+              X
+            </a>
+            <a
+              href="https://instagram.com/studionoma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
+            >
+              INSTAGRAM
+            </a>
+            <a
+              href="https://linkedin.com/company/studionoma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
+            >
+              LINKEDIN
+            </a>
           </div>
-        </div>
 
-        {/* Bottom bar */}
-        <div className="pt-8 border-t border-[#FFFBFB]/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs">
-          <span className="text-[#FFFBFB]/60">© 2026 STUDIO NOMA. ALL RIGHTS RESERVED.</span>
-          <span className="text-[#FFFBFB]/60">POWERED BY CLAUDE & STUDIO NOMA</span>
+          {/* Copyright */}
+          <div className="text-sm text-[#FFFBFB]/60">
+            © 2026 STUDIO NOMA. ALL RIGHTS RESERVED.
+          </div>
         </div>
       </div>
     </footer>

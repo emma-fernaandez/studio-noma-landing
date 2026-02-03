@@ -31,7 +31,7 @@ export default function Navbar() {
           </a>
 
           {/* Navigation Links */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center" style={{ gap: '5.5rem' }}>
             {navLinks.map((link) => (
               <a
                 key={link.name}

@@ -36,7 +36,7 @@ export default function Clients() {
               <img
                 src={client.logo}
                 alt={client.name}
-                className="max-w-full max-h-full object-contain grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}

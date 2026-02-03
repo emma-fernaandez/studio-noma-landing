@@ -25,17 +25,6 @@ export default function Team() {
   return (
     <section id="equipo" className="py-32 px-8 md:px-16 relative scroll-mt-20">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-[#FFFBFB] text-4xl md:text-5xl mb-16 text-center"
-        >
-          NUESTRO EQUIPO
-        </motion.h2>
-
         {/* Team Grid */}
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {team.map((member, index) => (

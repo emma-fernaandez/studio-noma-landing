@@ -50,7 +50,7 @@ export default function Team() {
               {/* Card */}
               <div className="bg-[#FFFBFB] rounded-sm overflow-hidden transition-all duration-300">
                 {/* Image Container with overlay */}
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative overflow-hidden" style={{ aspectRatio: '1/1.3' }}>
                   {/* White margin top */}
                   <div className="absolute top-0 left-0 right-0 h-8 bg-[#FFFBFB] z-10"></div>
 
@@ -61,8 +61,8 @@ export default function Team() {
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  {/* Info overlay - centered */}
-                  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                  {/* Info overlay - 1.5rem from bottom */}
+                  <div className="absolute bottom-6 left-0 right-0 z-20 pointer-events-none">
                     <div className="w-full px-6 py-4 bg-[#FFFBFB] flex justify-between items-center">
                       <span className="text-[#100E0E] text-sm font-semibold">
                         {member.name}

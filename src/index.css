@@ -90,12 +90,23 @@
 
   body {
     @apply bg-background text-foreground font-aileron;
+    overflow-x: hidden;
+  }
+
+  /* Hide scrollbar */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-pragmatica uppercase;
     font-weight: 700;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.05em;
   }
 
   p, span, a, button {

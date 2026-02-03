@@ -5,14 +5,14 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-between relative px-12 pt-32 pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen">
+      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
         <iframe
           src='https://my.spline.design/claritystream-gHPaerA2pIP5nZargemLMtPJ/'
           width='100%'
           height='100%'
           title="Spline 3D Background"
           className="w-full h-full border-0"
-          style={{ border: 0 }}
+          style={{ border: 0, pointerEvents: 'none' }}
         />
       </div>
 

@@ -53,10 +53,10 @@ export default function Team() {
                   {/* Info overlay - 1.5rem from bottom */}
                   <div className="absolute bottom-6 left-0 right-0 z-20 pointer-events-none">
                     <div className="w-full px-6 py-4 bg-[#FFFBFB] flex justify-between items-center">
-                      <span className="text-[#100E0E] text-sm font-semibold">
+                      <span className="text-[#100E0E] text-sm font-bold">
                         {member.name}
                       </span>
-                      <span className="text-[#100E0E] text-sm font-semibold">
+                      <span className="text-[#100E0E] text-sm font-bold">
                         {member.role}
                       </span>
                     </div>

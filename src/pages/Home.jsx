@@ -4,6 +4,7 @@ import ValueProposition from '@/components/landing/ValueProposition';
 import Projects from '@/components/landing/Projects';
 import Services from '@/components/landing/Services';
 import Values from '@/components/landing/Values';
+import Team from '@/components/landing/Team';
 import Contact from '@/components/landing/Contact';
 import Footer from '@/components/landing/Footer';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Services />
       <Values />
+      <Team />
       <Contact />
       <Footer />
     </div>

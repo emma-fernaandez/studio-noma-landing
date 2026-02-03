@@ -48,24 +48,30 @@ export default function Team() {
               className="group"
             >
               {/* Card */}
-              <div className="bg-[#FFFBFB]/[0.05] rounded-lg overflow-hidden transition-all duration-300 hover:bg-[#FFFBFB]/[0.08]">
-                {/* Image */}
-                <div className="aspect-square overflow-hidden bg-[#FFFBFB]/[0.03]">
+              <div className="bg-[#FFFBFB] rounded-sm overflow-hidden transition-all duration-300">
+                {/* Image Container with overlay */}
+                <div className="relative aspect-square overflow-hidden">
+                  {/* White margin top */}
+                  <div className="absolute top-0 left-0 right-0 h-8 bg-[#FFFBFB] z-10"></div>
+
+                  {/* Image */}
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
-                </div>
-                
-                {/* Info */}
-                <div className="p-6 text-center">
-                  <h3 className="text-[#FFFBFB] text-lg font-bold mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-[#FFFBFB]/60 text-sm font-semibold">
-                    {member.role}
-                  </p>
+
+                  {/* Info overlay - centered */}
+                  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <div className="w-full px-6 py-4 bg-[#FFFBFB] flex justify-between items-center">
+                      <span className="text-[#100E0E] text-sm font-semibold">
+                        {member.name}
+                      </span>
+                      <span className="text-[#100E0E] text-sm font-semibold">
+                        {member.role}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>

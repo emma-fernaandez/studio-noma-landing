@@ -30,13 +30,13 @@ export default function Clients() {
           {duplicatedClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 mx-1 flex items-center justify-center"
+              className="flex-shrink-0 mx-2 flex items-center justify-center"
               style={{ width: '200px', height: '200px' }}
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className="max-w-full max-h-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="max-w-full max-h-full object-contain grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>
           ))}

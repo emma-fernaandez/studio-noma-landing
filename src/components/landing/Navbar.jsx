@@ -36,20 +36,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveLink(link.name);
-                  const element = document.querySelector(link.href);
-                  if (element) {
-                    const navbarHeight = 80;
-                    const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-                    window.scrollTo({
-                      top: offsetPosition,
-                      behavior: 'smooth'
-                    });
-                  }
-                }}
+                onClick={() => setActiveLink(link.name)}
                 className="relative text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
               >
                 {link.name}

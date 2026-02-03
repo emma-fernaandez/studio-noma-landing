@@ -20,7 +20,8 @@ export default function Footer() {
           <img
             src={logoPrincipal}
             alt="Studio Noma"
-            className="h-16 md:h-24 w-auto"
+            className="w-auto"
+            style={{ height: '10rem' }}
           />
         </div>
 

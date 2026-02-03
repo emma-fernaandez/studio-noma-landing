@@ -20,8 +20,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-[#100E0E]"
     >
       <div className="px-12">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+        <div className="grid grid-cols-2 items-center h-20">
+          {/* Logo - Left side (smaller) */}
           <a href="#" className="flex-shrink-0">
             <img
               src={logoSvg}
@@ -30,8 +30,8 @@ export default function Navbar() {
             />
           </a>
 
-          {/* Navigation Links */}
-          <div className="flex items-center" style={{ gap: '5.5rem' }}>
+          {/* Navigation Links - Right side with even spacing */}
+          <div className="flex items-center justify-between">
             {navLinks.map((link) => (
               <a
                 key={link.name}

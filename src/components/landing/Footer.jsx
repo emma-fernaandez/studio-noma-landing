@@ -27,8 +27,13 @@ export default function Footer() {
           />
         </div>
 
-        {/* Bottom: Back to top and copyright */}
+        {/* Bottom: Copyright and back to top */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Copyright */}
+          <div className="text-sm text-[#FFFBFB]">
+            © 2026 STUDIO NOMA
+          </div>
+
           {/* Back to Top */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -36,11 +41,6 @@ export default function Footer() {
           >
             BACK TO TOP ↑
           </button>
-
-          {/* Copyright */}
-          <div className="text-sm text-[#FFFBFB]">
-            © 2026 STUDIO NOMA
-          </div>
         </div>
       </div>
     </footer>

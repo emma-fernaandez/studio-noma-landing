@@ -1,3 +1,5 @@
+import logoPrincipal from '../../assets/logo.svg';
+
 export default function Footer() {
   const navLinks = [
     { name: 'ABOUT', href: '#valores' },
@@ -13,14 +15,12 @@ export default function Footer() {
   return (
     <footer className="bg-[#100E0E] text-[#FFFBFB] py-20 px-8 md:px-16">
       <div className="max-w-7xl mx-auto">
-        {/* 3D Logo */}
-        <div className="mb-16 h-32 md:h-40 w-full max-w-2xl">
-          <iframe
-            src="https://my.spline.design/3ddesigntextcopycopy-OjVQQNjuBKAqHUuqR8O25ZsW-jbp/"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-            title="Studio Noma 3D Logo"
+        {/* Logo Principal */}
+        <div className="mb-16">
+          <img
+            src={logoPrincipal}
+            alt="Studio Noma"
+            className="h-16 md:h-24 w-auto"
           />
         </div>
 

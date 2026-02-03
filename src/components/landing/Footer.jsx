@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react';
 import logoSecondarySvg from '../../assets/logo-secondary.svg';
 
 export default function Footer() {
@@ -29,16 +28,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-16 mb-20">
           {/* Left: CTA */}
           <div>
-            <p className="text-2xl md:text-3xl mb-8 leading-tight max-w-md font-semibold">
+            <p className="max-w-md font-semibold" style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}>
               LISTOS PARA TRANSFORMAR TU VISIÓN EN REALIDAD DIGITAL
             </p>
-            <a
-              href="#contacto"
-              className="group inline-flex items-center gap-2 text-sm font-semibold text-[#FFE77A] transition-all duration-300 hover:gap-3"
-            >
-              EXPLORAR PROYECTOS
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </a>
           </div>
 
           {/* Right: Navigation links */}

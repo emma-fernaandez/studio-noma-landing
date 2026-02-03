@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-between relative px-8 md:px-16 pt-32 pb-16 overflow-hidden bg-[#100E0E]">
+    <section className="min-h-screen flex flex-col justify-between relative px-12 pt-32 pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen">
         <iframe

@@ -19,11 +19,11 @@ export default function Clients() {
     { name: 'Six Morrigan', logo: sixmorrigan },
   ];
 
-  // Duplicate array for seamless infinite scroll
-  const duplicatedClients = [...clients, ...clients];
+  // Triple array for seamless infinite scroll
+  const duplicatedClients = [...clients, ...clients, ...clients];
 
   return (
-    <section className="py-20 px-8 md:px-16 relative overflow-hidden scroll-mt-20">
+    <section className="py-20 relative overflow-hidden scroll-mt-20">
       <div className="relative">
         {/* Infinite scroll container */}
         <div className="flex animate-scroll">

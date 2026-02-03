@@ -19,7 +19,7 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-[#100E0E]"
     >
-      <div className="px-8 md:px-16">
+      <div className="px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex-shrink-0">

@@ -30,8 +30,8 @@ export default function Clients() {
           {duplicatedClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center"
-              style={{ width: '200px', height: '100px' }}
+              className="flex-shrink-0 mx-1 flex items-center justify-center"
+              style={{ width: '200px', height: '200px' }}
             >
               <img
                 src={client.logo}

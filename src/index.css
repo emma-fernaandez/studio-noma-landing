@@ -151,4 +151,18 @@
   .animate-scroll {
     animation: scroll 12s linear infinite;
   }
+
+  /* Badge loop animation - smoother with 6 repetitions */
+  @keyframes scroll-badges {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-badges {
+    animation: scroll-badges 24s linear infinite;
+  }
 }

@@ -4,6 +4,7 @@ import emmaPortrait from '../../assets/emma-portrait.png';
 import nicolePortrait from '../../assets/nicole-portrait.png';
 import chiaraPortrait from '../../assets/chiara-portrait.png';
 import nicoleAnimation from '../../assets/nicole-animation.mp4';
+import chiaraAnimation from '../../assets/chiara-animation.mp4';
 
 export default function Team() {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -26,7 +27,7 @@ export default function Team() {
       name: 'CHIARA',
       role: 'ACCOUNT MANAGER',
       image: chiaraPortrait,
-      video: null,
+      video: chiaraAnimation,
     },
   ];
 

@@ -5,7 +5,6 @@ import Projects from '@/components/landing/Projects';
 import Services from '@/components/landing/Services';
 import Values from '@/components/landing/Values';
 import Team from '@/components/landing/Team';
-import Contact from '@/components/landing/Contact';
 import Footer from '@/components/landing/Footer';
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Services />
       <Values />
       <Team />
-      <Contact />
       <Footer />
     </div>
   );

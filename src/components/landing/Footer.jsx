@@ -2,7 +2,7 @@ import logoPrincipal from '../../assets/logo.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#100E0E] text-[#FFFBFB] py-20 px-12">
+    <footer className="bg-[#100E0E] text-[#FFFBFB] pt-20 pb-8 px-12">
       <div className="flex flex-col">
         {/* Top: Contact CTA */}
         <div className="mb-20">

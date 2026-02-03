@@ -1,4 +1,4 @@
-import logoPrincipal from '../../assets/logo-footer.png';
+import logoPrincipal from '../../assets/logo.svg';
 
 export default function Footer() {
   return (
@@ -18,48 +18,28 @@ export default function Footer() {
         </div>
 
         {/* Middle: Large Logo */}
-        <div className="mb-16 flex justify-center">
+        <div className="mb-8 flex justify-center">
           <img
             src={logoPrincipal}
             alt="Studio Noma"
             className="w-auto"
-            style={{ height: '12rem' }}
+            style={{ height: '20rem' }}
           />
         </div>
 
-        {/* Bottom: Social links and copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-[#FFFBFB]/10 pt-8">
-          {/* Social Links */}
-          <div className="flex gap-8">
-            <a
-              href="https://x.com/studionoma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
-            >
-              X
-            </a>
-            <a
-              href="https://instagram.com/studionoma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
-            >
-              INSTAGRAM
-            </a>
-            <a
-              href="https://linkedin.com/company/studionoma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
-            >
-              LINKEDIN
-            </a>
-          </div>
+        {/* Bottom: Back to top and copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Back to Top */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
+          >
+            BACK TO TOP ↑
+          </button>
 
           {/* Copyright */}
-          <div className="text-sm text-[#FFFBFB]/60">
-            © 2026 STUDIO NOMA. ALL RIGHTS RESERVED.
+          <div className="text-sm text-[#FFFBFB]">
+            © 2026 STUDIO NOMA
           </div>
         </div>
       </div>

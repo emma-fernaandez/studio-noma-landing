@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <section id="proyectos" className="py-32 px-12 relative scroll-mt-20">
-      <div className="max-w-7xl mx-auto">
+      <div>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}

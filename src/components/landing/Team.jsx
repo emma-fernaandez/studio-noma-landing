@@ -24,7 +24,7 @@ export default function Team() {
 
   return (
     <section id="equipo" className="py-32 px-12 relative scroll-mt-20">
-      <div className="max-w-7xl mx-auto">
+      <div>
         {/* Team Grid */}
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {team.map((member, index) => (

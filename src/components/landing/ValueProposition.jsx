@@ -31,7 +31,7 @@ export default function ValueProposition() {
 
   return (
     <section className="py-32 px-12 relative">
-      <div className="max-w-7xl mx-auto">
+      <div>
         {/* Título centrado */}
         <motion.h2
           ref={ref}

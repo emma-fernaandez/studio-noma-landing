@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#100E0E] text-[#FFFBFB] py-20 px-12">
-      <div className="max-w-7xl mx-auto">
+      <div>
         {/* Logo Principal */}
         <div className="mb-16">
           <img

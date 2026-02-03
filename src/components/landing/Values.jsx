@@ -30,7 +30,7 @@ export default function Values() {
 
   return (
     <section id="valores" className="py-32 px-12 bg-[#FFFBFB]/[0.02] scroll-mt-20">
-      <div className="max-w-6xl mx-auto">
+      <div>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}

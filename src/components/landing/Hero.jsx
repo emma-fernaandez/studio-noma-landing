@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Título - Parte superior derecha */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2">
         <div></div>
         <motion.h1
           initial={{ y: 40, opacity: 0 }}
@@ -35,7 +35,7 @@ export default function Hero() {
       </div>
 
       {/* Parte inferior: Subtítulo izquierda, Enlaces derecha */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2">
         {/* Subtítulo - Abajo izquierda */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}

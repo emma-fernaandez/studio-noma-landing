@@ -110,7 +110,7 @@ export default function Services() {
                 href="#contacto"
                 className="inline-flex items-center gap-2 text-xs  transition-all duration-300 group-hover:gap-4 text-[#FFE77A] tracking-wider uppercase"
               >
-                CONSULTAR ↗
+                CONSULTAR ↓
               </a>
             </motion.div>
           ))}

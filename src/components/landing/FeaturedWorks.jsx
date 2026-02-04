@@ -48,8 +48,8 @@ export default function FeaturedWorks() {
     },
   ];
 
-  // Triple projects for seamless loop
-  const projects = [...baseProjects, ...baseProjects, ...baseProjects];
+  // Repeat projects 6 times for seamless loop
+  const projects = [...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects];
 
   return (
     <section className="py-32 px-12 relative scroll-mt-20 bg-[#100E0E]">
@@ -77,7 +77,7 @@ export default function FeaturedWorks() {
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0" style={{ width: '450px' }}>
               {/* Project Image */}
-              <div className="w-full rounded-lg mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9' }}>
+              <div className="w-full mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9', borderRadius: '5px' }}>
                 <img
                   src={project.image}
                   alt={project.name}
@@ -96,7 +96,15 @@ export default function FeaturedWorks() {
                   <span
                     key={tag}
                     className="rounded-full text-[#FFFBFB] text-base font-semibold"
-                    style={{ padding: '2rem', borderWidth: '0.5px', borderColor: '#FFFBFB', borderStyle: 'solid' }}
+                    style={{
+                      paddingLeft: '2rem',
+                      paddingRight: '2rem',
+                      paddingTop: '0.5rem',
+                      paddingBottom: '0.5rem',
+                      borderWidth: '0.5px',
+                      borderColor: '#FFFBFB',
+                      borderStyle: 'solid'
+                    }}
                   >
                     {tag}
                   </span>

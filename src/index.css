@@ -166,17 +166,17 @@
     animation: scroll-badges 24s linear infinite;
   }
 
-  /* Projects loop animation - 3 repetitions */
+  /* Projects loop animation - 6 repetitions */
   @keyframes scroll-projects {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-33.333%);
+      transform: translateX(-50%);
     }
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 7.5s linear infinite;
+    animation: scroll-projects 15s linear infinite;
   }
 }

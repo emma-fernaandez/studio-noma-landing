@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import laterraza from '../../assets/mokups/laterraza.jpg';
 import dance from '../../assets/mokups/dance.jpg';
 import HLC from '../../assets/mokups/HLC.jpg';
@@ -9,6 +9,19 @@ import sugarpapi from '../../assets/mokups/sugarpapi.jpg';
 
 export default function FeaturedWorks() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isTabVisible, setIsTabVisible] = useState(true);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      setIsTabVisible(!document.hidden);
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
   const baseProjects = [
     {
@@ -71,7 +84,7 @@ export default function FeaturedWorks() {
         <div
           className="flex gap-8 md:gap-12 animate-scroll-projects"
           style={{
-            animationPlayState: isHovered ? 'paused' : 'running',
+            animationPlayState: (isHovered || !isTabVisible) ? 'paused' : 'running',
             willChange: 'transform'
           }}
           onMouseEnter={() => setIsHovered(true)}

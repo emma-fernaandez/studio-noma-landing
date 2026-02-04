@@ -34,7 +34,7 @@ export default function FeaturedWorks() {
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-6xl md:text-7xl text-[#100E0E]">
-          FEATURED <span className="italic font-normal">WORKS</span>
+          FEATURED WORKS
         </h2>
         <a
           href="#contacto"

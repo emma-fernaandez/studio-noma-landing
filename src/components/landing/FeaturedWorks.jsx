@@ -12,7 +12,7 @@ export default function FeaturedWorks() {
 
   const baseProjects = [
     {
-      name: 'LA TERRAZA',
+      name: 'LATERRAZA',
       tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
       image: laterraza,
     },
@@ -22,12 +22,12 @@ export default function FeaturedWorks() {
       image: dance,
     },
     {
-      name: 'HLC',
+      name: 'HANNIBAL LAGUNA COLLECTION',
       tags: ['WEBFLOW', 'GSAP', 'CORPORATE'],
       image: HLC,
     },
     {
-      name: 'BDP',
+      name: 'BDP BURGER',
       tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
       image: bdp,
     },
@@ -37,7 +37,7 @@ export default function FeaturedWorks() {
       image: faberlab,
     },
     {
-      name: 'BEANYWOOD',
+      name: 'BEANYWOOD CAFE',
       tags: ['WEBFLOW', 'GSAP', 'E-COMMERCE'],
       image: beanywood,
     },

@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Clients />
-      <FeaturedWorks />
       <ValueProposition />
+      <FeaturedWorks />
       <Team />
       <Footer />
     </div>

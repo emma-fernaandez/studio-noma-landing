@@ -47,7 +47,8 @@ export default function FeaturedWorks() {
       {/* Projects Row */}
       <div className="relative overflow-hidden">
         <div
-          className={`flex gap-8 md:gap-12 ${!isHovered ? 'animate-scroll-projects' : ''}`}
+          className="flex gap-8 md:gap-12 animate-scroll-projects"
+          style={{ animationPlayState: isHovered ? 'paused' : 'running' }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >

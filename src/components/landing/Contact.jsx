@@ -40,7 +40,7 @@ export default function Contact() {
               <span className="text-sm">
                 HOLA@STUDIONOMA.COM
               </span>
-              <span className="text-lg">→</span>
+              <span className="text-lg">↗</span>
             </a>
             
             <div className="flex items-center gap-2 text-[#682DD6]/60 text-xs uppercase tracking-wider font-number">

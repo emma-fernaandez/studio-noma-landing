@@ -126,7 +126,7 @@ export default function Projects() {
                   </div>
 
                   <button className="inline-flex items-center gap-3 text-[#FFE77A] text-sm  hover:gap-5 transition-all duration-300 uppercase tracking-wider">
-                    VER PROYECTO →
+                    VER PROYECTO ↗
                   </button>
                 </div>
 

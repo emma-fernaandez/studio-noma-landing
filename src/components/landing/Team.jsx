@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import emmaPortrait from '../../assets/emma-portrait.png';
 import nicolePortrait from '../../assets/nicole-portrait.png';
 import chiaraPortrait from '../../assets/chiara-portrait.png';
-import emmaAnimation from '../../assets/emma-animation.mp4';
+import emmaAnimazione from '../../assets/emma-animazione.mp4';
 import nicoleAnimation from '../../assets/nicole-animation.mp4';
 import chiaraAnimation from '../../assets/chiara-animation.mp4';
 
@@ -16,7 +16,7 @@ export default function Team() {
       name: 'EMMA',
       role: 'LEAD DEVELOPER',
       image: emmaPortrait,
-      video: emmaAnimation,
+      video: emmaAnimazione,
     },
     {
       name: 'NICOLE',

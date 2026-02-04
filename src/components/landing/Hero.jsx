@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[#FFFBFB]/60 max-w-md font-semibold"
+          className="text-[#FFFBFB] max-w-md font-semibold"
           style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
         >
           Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.

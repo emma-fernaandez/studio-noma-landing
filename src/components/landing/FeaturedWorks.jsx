@@ -23,15 +23,15 @@ export default function FeaturedWorks() {
   ];
 
   return (
-    <section className="py-32 px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section className="py-32 px-12 relative scroll-mt-20 bg-[#FFFBFB]">
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
-        <h2 className="text-6xl md:text-7xl text-[#FFFBFB]">
+        <h2 className="text-6xl md:text-7xl text-[#100E0E]">
           FEATURED <span className="italic font-normal">WORKS</span>
         </h2>
         <a
           href="#contacto"
-          className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2"
+          className="text-[#100E0E] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2"
         >
           WORK WITH ME →
         </a>
@@ -51,7 +51,7 @@ export default function FeaturedWorks() {
             />
 
             {/* Project Name */}
-            <h3 className="text-[#FFFBFB] text-2xl mb-4 font-bold">
+            <h3 className="text-[#100E0E] text-2xl mb-4 font-bold">
               {project.name}
             </h3>
 
@@ -60,7 +60,7 @@ export default function FeaturedWorks() {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-2 border border-[#FFFBFB] rounded-full text-[#FFFBFB] text-xs font-semibold"
+                  className="px-4 py-2 border border-[#100E0E] rounded-full text-[#100E0E] text-xs font-semibold"
                 >
                   {tag}
                 </span>

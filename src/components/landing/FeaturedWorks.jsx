@@ -48,8 +48,8 @@ export default function FeaturedWorks() {
     },
   ];
 
-  // Repeat projects 6 times for seamless loop
-  const projects = [...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects, ...baseProjects];
+  // Duplicate projects for seamless loop
+  const projects = [...baseProjects, ...baseProjects];
 
   return (
     <section className="py-32 px-12 relative scroll-mt-20 bg-[#100E0E]">
@@ -97,8 +97,8 @@ export default function FeaturedWorks() {
                     key={tag}
                     className="rounded-full text-[#FFFBFB] text-base font-semibold"
                     style={{
-                      paddingLeft: '2rem',
-                      paddingRight: '2rem',
+                      paddingLeft: '1.5rem',
+                      paddingRight: '1.5rem',
                       paddingTop: '0.5rem',
                       paddingBottom: '0.5rem',
                       borderWidth: '0.5px',

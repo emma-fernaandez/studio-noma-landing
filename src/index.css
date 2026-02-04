@@ -166,7 +166,7 @@
     animation: scroll-badges 24s linear infinite;
   }
 
-  /* Projects loop animation - 6 repetitions */
+  /* Projects loop animation - shows all 7 projects */
   @keyframes scroll-projects {
     0% {
       transform: translateX(0);
@@ -177,6 +177,6 @@
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 15s linear infinite;
+    animation: scroll-projects 30s linear infinite;
   }
 }

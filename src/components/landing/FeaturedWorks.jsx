@@ -1,28 +1,50 @@
 import { useState } from 'react';
+import laterraza from '../../assets/mokups/laterraza.jpg';
+import dance from '../../assets/mokups/dance.jpg';
+import HLC from '../../assets/mokups/HLC.jpg';
+import bdp from '../../assets/mokups/bdp.jpg';
+import faberlab from '../../assets/mokups/faberlab.jpg';
+import beanywood from '../../assets/mokups/beanywood.jpg';
+import sugarpapi from '../../assets/mokups/sugarpapi.jpg';
 
 export default function FeaturedWorks() {
   const [isHovered, setIsHovered] = useState(false);
 
   const baseProjects = [
     {
-      name: 'SURROUND',
+      name: 'LA TERRAZA',
       tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
-      color: '#682DD6', // Purple from palette
+      image: laterraza,
     },
     {
-      name: 'U SOCIAL',
-      tags: ['WEBFLOW', 'GSAP', 'SAAS'],
-      color: '#FFE77A', // Yellow from palette
+      name: 'DANCE',
+      tags: ['WEBFLOW', 'GSAP', 'CREATIVE'],
+      image: dance,
     },
     {
-      name: 'INFLUINT',
-      tags: ['WEBFLOW', 'GSAP', 'SPLINE'],
-      color: '#682DD6', // Purple from palette
+      name: 'HLC',
+      tags: ['WEBFLOW', 'GSAP', 'CORPORATE'],
+      image: HLC,
     },
     {
-      name: 'PILLAR: OMS',
-      tags: ['WEBFLOW', 'GSAP', 'SAAS'],
-      color: '#FFE77A', // Yellow from palette
+      name: 'BDP',
+      tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
+      image: bdp,
+    },
+    {
+      name: 'FABERLAB',
+      tags: ['WEBFLOW', 'GSAP', 'TECH'],
+      image: faberlab,
+    },
+    {
+      name: 'BEANYWOOD',
+      tags: ['WEBFLOW', 'GSAP', 'E-COMMERCE'],
+      image: beanywood,
+    },
+    {
+      name: 'SUGARPAPI',
+      tags: ['WEBFLOW', 'GSAP', 'CREATIVE'],
+      image: sugarpapi,
     },
   ];
 
@@ -54,14 +76,14 @@ export default function FeaturedWorks() {
         >
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0" style={{ width: '450px' }}>
-              {/* Project Image Placeholder */}
-              <div
-                className="w-full rounded-sm mb-6 transition-transform duration-500 hover:scale-105"
-                style={{
-                  aspectRatio: '1/1',
-                  backgroundColor: project.color,
-                }}
-              />
+              {/* Project Image */}
+              <div className="w-full rounded-sm mb-6 overflow-hidden" style={{ aspectRatio: '1/1' }}>
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
 
               {/* Project Name */}
               <h3 className="text-[#FFFBFB] text-2xl mb-4 font-bold">

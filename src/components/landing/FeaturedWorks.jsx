@@ -23,7 +23,7 @@ export default function FeaturedWorks() {
   ];
 
   return (
-    <section className="py-32 px-12 relative scroll-mt-20 bg-[#FFFBFB]">
+    <section className="py-32 px-12 relative scroll-mt-20 bg-[#D9D9D9]">
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-6xl md:text-7xl text-[#100E0E]">
@@ -37,15 +37,15 @@ export default function FeaturedWorks() {
         </a>
       </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Projects Row */}
+      <div className="flex gap-6 overflow-x-auto">
         {projects.map((project, index) => (
-          <div key={`${project.name}-${index}`}>
+          <div key={`${project.name}-${index}`} className="flex-shrink-0" style={{ width: '450px' }}>
             {/* Project Image Placeholder */}
             <div
               className="w-full rounded-sm mb-6 transition-transform duration-500 hover:scale-105"
               style={{
-                aspectRatio: '4/3',
+                aspectRatio: '16/10',
                 backgroundColor: project.color,
               }}
             />

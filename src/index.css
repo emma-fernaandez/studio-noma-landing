@@ -177,6 +177,6 @@
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 120s linear infinite;
+    animation: scroll-projects 35s linear infinite;
   }
 }

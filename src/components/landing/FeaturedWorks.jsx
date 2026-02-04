@@ -23,7 +23,7 @@ export default function FeaturedWorks() {
   ];
 
   return (
-    <section className="py-32 px-12 relative scroll-mt-20 bg-[#D9D9D9]">
+    <section className="py-48 px-12 relative scroll-mt-20 bg-[#D9D9D9]">
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-6xl md:text-7xl text-[#100E0E]">
@@ -45,7 +45,7 @@ export default function FeaturedWorks() {
             <div
               className="w-full rounded-sm mb-6 transition-transform duration-500 hover:scale-105"
               style={{
-                aspectRatio: '16/10',
+                aspectRatio: '1/1',
                 backgroundColor: project.color,
               }}
             />

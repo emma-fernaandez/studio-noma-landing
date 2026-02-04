@@ -1,9 +1,4 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-
 export default function FeaturedWorks() {
-  const [isHovering, setIsHovering] = useState(false);
-
   const projects = [
     {
       name: 'SURROUND',
@@ -25,17 +20,6 @@ export default function FeaturedWorks() {
       tags: ['WEBFLOW', 'GSAP', 'SAAS'],
       color: '#FFE77A', // Yellow from palette
     },
-    // Duplicate for seamless loop
-    {
-      name: 'SURROUND',
-      tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
-      color: '#682DD6',
-    },
-    {
-      name: 'U SOCIAL',
-      tags: ['WEBFLOW', 'GSAP', 'SAAS'],
-      color: '#FFE77A',
-    },
   ];
 
   return (
@@ -53,57 +37,37 @@ export default function FeaturedWorks() {
         </a>
       </div>
 
-      {/* Projects Carousel */}
-      <div
-        className="relative overflow-hidden"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        <motion.div
-          className="flex gap-8"
-          animate={{
-            x: isHovering ? '-50%' : '0%',
-          }}
-          transition={{
-            duration: isHovering ? 20 : 0,
-            ease: 'linear',
-            repeat: isHovering ? Infinity : 0,
-          }}
-        >
-          {projects.map((project, index) => (
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {projects.map((project, index) => (
+          <div key={`${project.name}-${index}`}>
+            {/* Project Image Placeholder */}
             <div
-              key={`${project.name}-${index}`}
-              className="flex-shrink-0"
-              style={{ width: '400px' }}
-            >
-              {/* Project Image Placeholder */}
-              <div
-                className="w-full rounded-sm mb-6 transition-transform duration-500 hover:scale-105"
-                style={{
-                  aspectRatio: '4/3',
-                  backgroundColor: project.color,
-                }}
-              />
+              className="w-full rounded-sm mb-6 transition-transform duration-500 hover:scale-105"
+              style={{
+                aspectRatio: '4/3',
+                backgroundColor: project.color,
+              }}
+            />
 
-              {/* Project Name */}
-              <h3 className="text-[#FFFBFB] text-2xl mb-4 font-bold">
-                {project.name}
-              </h3>
+            {/* Project Name */}
+            <h3 className="text-[#FFFBFB] text-2xl mb-4 font-bold">
+              {project.name}
+            </h3>
 
-              {/* Tags */}
-              <div className="flex gap-3">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-4 py-2 border border-[#FFFBFB] rounded-full text-[#FFFBFB] text-xs font-semibold"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            {/* Tags */}
+            <div className="flex gap-3 flex-wrap">
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-4 py-2 border border-[#FFFBFB] rounded-full text-[#FFFBFB] text-xs font-semibold"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
-          ))}
-        </motion.div>
+          </div>
+        ))}
       </div>
     </section>
   );

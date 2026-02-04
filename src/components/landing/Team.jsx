@@ -40,6 +40,15 @@ export default function Team() {
     }
   };
 
+  const handleMouseLeave = (memberName) => {
+    const member = team.find(m => m.name === memberName);
+    if (member.video && videoRefs.current[memberName]) {
+      videoRefs.current[memberName].pause();
+      videoRefs.current[memberName].currentTime = 0;
+      setPlayingVideo(null);
+    }
+  };
+
   const handleVideoEnd = (memberName) => {
     setPlayingVideo(null);
   };
@@ -62,6 +71,7 @@ export default function Team() {
               <div
                 className="bg-[#FFFBFB] rounded-sm overflow-hidden transition-all duration-300"
                 onMouseEnter={() => handleMouseEnter(member.name)}
+                onMouseLeave={() => handleMouseLeave(member.name)}
               >
                 {/* Image Container with overlay */}
                 <div className="relative overflow-hidden" style={{ aspectRatio: '1/1.3' }}>

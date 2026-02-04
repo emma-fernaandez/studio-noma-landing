@@ -57,13 +57,13 @@ export default function Hero() {
             href="#proyectos"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Nuestros Proyectos ↓
+            Nuestros Proyectos ↘
           </a>
           <a
             href="#servicios"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Explorar Servicios ↓
+            Explorar Servicios ↘
           </a>
         </motion.div>
       </div>

@@ -40,7 +40,7 @@ export default function FeaturedWorks() {
           href="#contacto"
           className="text-[#100E0E] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2"
         >
-          WORK WITH ME ↓
+          WORK WITH ME ↘
         </a>
       </div>
 

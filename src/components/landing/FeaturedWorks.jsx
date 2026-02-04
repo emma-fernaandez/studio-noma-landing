@@ -77,7 +77,7 @@ export default function FeaturedWorks() {
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0" style={{ width: '450px' }}>
               {/* Project Image */}
-              <div className="w-full rounded-sm mb-6 overflow-hidden" style={{ aspectRatio: '1/1' }}>
+              <div className="w-full rounded-lg mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9' }}>
                 <img
                   src={project.image}
                   alt={project.name}
@@ -95,7 +95,8 @@ export default function FeaturedWorks() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-4 py-2 border border-[#FFFBFB] rounded-full text-[#FFFBFB] text-xs font-semibold"
+                    className="rounded-full text-[#FFFBFB] text-base font-semibold"
+                    style={{ padding: '2rem', borderWidth: '0.5px', borderColor: '#FFFBFB', borderStyle: 'solid' }}
                   >
                     {tag}
                   </span>

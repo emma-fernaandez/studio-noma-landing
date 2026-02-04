@@ -39,7 +39,7 @@ export default function Footer() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
           >
-            BACK TO TOP ↑
+            BACK TO TOP ↖
           </button>
         </div>
       </div>

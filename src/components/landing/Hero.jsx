@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
         <iframe
-          src='https://my.spline.design/claritystream-gHPaerA2pIP5nZargemLMtPJ/'
+          src='https://my.spline.design/wavesanimation-be40o0F1JYDMtxMJW3gVOuxp/'
           width='100%'
           height='100%'
           title="Spline 3D Background"

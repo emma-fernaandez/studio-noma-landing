@@ -165,4 +165,18 @@
   .animate-scroll-badges {
     animation: scroll-badges 24s linear infinite;
   }
+
+  /* Projects loop animation - 3 repetitions */
+  @keyframes scroll-projects {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  .animate-scroll-projects {
+    animation: scroll-projects 30s linear infinite;
+  }
 }

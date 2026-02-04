@@ -30,7 +30,7 @@ export default function FeaturedWorks() {
   const projects = [...baseProjects, ...baseProjects, ...baseProjects];
 
   return (
-    <section className="py-48 px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section className="py-32 px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-6xl md:text-7xl text-[#FFFBFB]">

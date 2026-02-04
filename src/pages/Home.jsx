@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <ValueProposition />
       <FeaturedWorks />
-      <Team />
       <Clients />
+      <Team />
       <Footer />
     </div>
   );

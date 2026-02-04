@@ -172,11 +172,11 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-52%);
     }
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 35s linear infinite;
+    animation: scroll-projects 25s linear infinite;
   }
 }

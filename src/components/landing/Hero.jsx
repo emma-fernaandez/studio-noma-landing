@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -58,15 +57,13 @@ export default function Hero() {
             href="#proyectos"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Nuestros Proyectos
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            Nuestros Proyectos →
           </a>
           <a
             href="#servicios"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Explorar Servicios
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            Explorar Servicios →
           </a>
         </motion.div>
       </div>

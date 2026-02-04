@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
@@ -127,8 +126,7 @@ export default function Projects() {
                   </div>
 
                   <button className="inline-flex items-center gap-3 text-[#FFE77A] text-sm  hover:gap-5 transition-all duration-300 uppercase tracking-wider">
-                    VER PROYECTO
-                    <ExternalLink className="w-4 h-4" />
+                    VER PROYECTO →
                   </button>
                 </div>
 

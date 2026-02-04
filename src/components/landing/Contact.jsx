@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowUpRight, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -40,7 +40,7 @@ export default function Contact() {
               <span className="text-sm">
                 HOLA@STUDIONOMA.COM
               </span>
-              <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              <span className="text-lg">→</span>
             </a>
             
             <div className="flex items-center gap-2 text-[#682DD6]/60 text-xs uppercase tracking-wider font-number">

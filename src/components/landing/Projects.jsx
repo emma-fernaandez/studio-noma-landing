@@ -45,7 +45,7 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="proyectos" className="py-32 px-12 relative scroll-mt-20">
+    <section id="proyectos" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20">
       <div>
         <motion.div
           ref={ref}
@@ -60,14 +60,14 @@ export default function Projects() {
               PROGETTI IN EVIDENZA
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9] uppercase">
             CASI DI
             <br />
             <span className="text-[#682DD6]/60">SUCCESSO</span>
           </h2>
         </motion.div>
 
-        <div className="space-y-32">
+        <div className="space-y-16 md:space-y-32">
           {projects.map((project, index) => (
             <motion.div
               key={project.number}

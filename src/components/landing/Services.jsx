@@ -34,7 +34,7 @@ export default function Services() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="servicios" className="py-32 px-12 relative bg-[#FFFBFB]/[0.02] scroll-mt-20">
+    <section id="servicios" className="py-16 md:py-32 px-6 md:px-12 relative bg-[#FFFBFB]/[0.02] scroll-mt-20">
       <div>
         <motion.div
           ref={ref}
@@ -49,14 +49,14 @@ export default function Services() {
               SERVIZI
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
             I NOSTRI
             <br />
             <span className="text-[#682DD6]/60">SERVIZI</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-px bg-[#FFFBFB]/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#FFFBFB]/10">
           {services.map((service, index) => (
             <motion.div
               key={service.level}

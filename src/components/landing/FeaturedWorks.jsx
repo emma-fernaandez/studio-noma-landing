@@ -65,15 +65,15 @@ export default function FeaturedWorks() {
   const projects = [...baseProjects, ...baseProjects];
 
   return (
-    <section className="py-32 px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
-      <div className="flex justify-between items-end mb-16">
-        <h2 className="text-6xl md:text-7xl text-[#FFFBFB]">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-16">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-[#FFFBFB]">
           LAVORI IN EVIDENZA
         </h2>
         <a
           href="#contacto"
-          className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2"
+          className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2 flex-shrink-0"
         >
           LAVORA CON ME ↘
         </a>
@@ -91,7 +91,7 @@ export default function FeaturedWorks() {
           onMouseLeave={() => setIsHovered(false)}
         >
           {projects.map((project, index) => (
-            <div key={`${project.name}-${index}`} className="flex-shrink-0" style={{ width: '450px' }}>
+            <div key={`${project.name}-${index}`} className="flex-shrink-0 w-[280px] sm:w-[350px] md:w-[450px]">
               {/* Project Image */}
               <div className="w-full mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9', borderRadius: '5px' }}>
                 <img

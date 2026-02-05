@@ -55,10 +55,10 @@ export default function Team() {
   };
 
   return (
-    <section id="equipo" className="py-32 px-12 relative scroll-mt-20">
+    <section id="equipo" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20">
       <div>
         {/* Team Grid */}
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
           {team.map((member, index) => (
             <motion.div
               key={member.name}

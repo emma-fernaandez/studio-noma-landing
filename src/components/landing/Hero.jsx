@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-between relative px-12 pt-32 pb-16 overflow-hidden bg-[#100E0E]">
+    <section className="min-h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
         <iframe
@@ -22,8 +22,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[#FFFBFB] leading-[0.9]"
-          style={{ fontSize: '5.5rem' }}
+          className="text-[#FFFBFB] leading-[0.9] text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
         >
           DOVE LE
           <br />
@@ -40,8 +39,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[#FFFBFB] max-w-md font-semibold"
-          style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
+          className="text-[#FFFBFB] max-w-md font-semibold text-sm sm:text-base md:text-lg"
         >
           Trasformiamo idee in esperienze digitali uniche. Niente template. Niente generico. Solo codice che rappresenta la tua identità.
         </motion.p>

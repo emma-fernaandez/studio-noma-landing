@@ -7,7 +7,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contacto" className="py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden scroll-mt-20">
+    <section id="contacto" className="py-16 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden scroll-mt-20">
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#682DD6]/10 via-[#FFE77A]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
       
@@ -18,7 +18,7 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-16">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-8 md:mb-16">
             LAVORA
             <br />
             <span className="text-[#FFE77A]">
@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-6">
             <a
               href="mailto:hola@studionoma.com"
-              className="group inline-flex items-center gap-4 px-12 py-6 bg-[#FFE77A] text-[#100E0E] hover:bg-[#FFFBFB] transition-colors duration-300"
+              className="group inline-flex items-center gap-3 md:gap-4 px-6 md:px-12 py-4 md:py-6 bg-[#FFE77A] text-[#100E0E] hover:bg-[#FFFBFB] transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
               <span className="text-sm">

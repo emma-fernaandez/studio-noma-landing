@@ -38,7 +38,7 @@ export default function ValueProposition() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-[#FFFBFB] leading-[1.1] text-center mb-12 md:mb-20 max-w-5xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-[5.5rem]"
+          className="text-[#FFFBFB] leading-[1.1] text-center mb-12 md:mb-20 max-w-5xl mx-auto text-[2rem] sm:text-4xl md:text-5xl lg:text-[5.5rem]"
         >
           NON È SOLO UN SITO WEB {' '}
           <span className="text-[#FF4937]">CREAMO UNA IDENTITÀ DIGITALE</span>

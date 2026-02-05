@@ -19,16 +19,16 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-16">
-            TRABAJA
+            LAVORA
             <br />
             <span className="text-[#FFE77A]">
-              CON NOSOTROS
+              CON NOI
             </span>
           </h2>
 
           <p className="text-[#FFFBFB] text-sm max-w-xl mx-auto mb-12 leading-relaxed">
-            ¿TIENES UN PROYECTO EN MENTE? HABLEMOS.
-            SIN COMPROMISO, SIN TECNICISMOS. SOLO RESULTADOS.
+            HAI UN PROGETTO IN MENTE? PARLIAMONE.
+            SENZA IMPEGNO, SENZA TECNICISMI. SOLO RISULTATI.
           </p>
 
           <div className="flex flex-col items-center gap-6">
@@ -45,7 +45,7 @@ export default function Contact() {
             
             <div className="flex items-center gap-2 text-[#682DD6]/60 text-xs uppercase tracking-wider font-number">
               <div className="w-1.5 h-1.5 rounded-full bg-[#FFE77A]" />
-              RESPUESTA EN 24H
+              RISPOSTA IN 24H
             </div>
           </div>
         </motion.div>

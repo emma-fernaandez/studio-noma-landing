@@ -5,23 +5,23 @@ import { useRef } from 'react';
 const features = [
   {
     number: "01",
-    title: "COMENZAMOS CON DESCUBRIMIENTO PROFUNDO",
-    description: "Nuestro equipo recopila información que se convierte en la base para un diseño significativo y relevante. Esta fase establece la dirección para una identidad fuerte y auténtica."
+    title: "INIZIAMO CON UNA SCOPERTA PROFONDA",
+    description: "Il nostro team raccoglie informazioni che diventano la base per un design significativo e rilevante. Questa fase stabilisce la direzione per un'identità forte e autentica."
   },
   {
     number: "02",
-    title: "DAMOS FORMA AL LENGUAJE VISUAL",
-    description: "Nuestros diseñadores y directores de arte trabajan juntos para crear logos, elementos de marca y sistemas visuales. Desde tipografía hasta paletas de colores, cada elemento se construye para reflejar la personalidad de tu marca."
+    title: "DIAMO FORMA AL LINGUAGGIO VISIVO",
+    description: "I nostri designer e direttori artistici lavorano insieme per creare loghi, elementi del brand e sistemi visivi. Dalla tipografia alle palette di colori, ogni elemento è costruito per riflettere la personalità del tuo marchio."
   },
   {
     number: "03",
-    title: "DONDE EL MOVIMIENTO SE ENCUENTRA CON LA EXPRESIÓN",
-    description: "Para hacer que tu marca cobre vida, los diseñadores de movimiento e ilustradores crean activos visuales que agregan profundidad y carácter. Las animaciones, íconos e ilustraciones se adaptan para apoyar la narrativa y el compromiso."
+    title: "DOVE IL MOVIMENTO INCONTRA L'ESPRESSIONE",
+    description: "Per dare vita al tuo brand, i motion designer e gli illustratori creano asset visivi che aggiungono profondità e carattere. Animazioni, icone e illustrazioni sono personalizzate per supportare la narrazione e il coinvolgimento."
   },
   {
     number: "04",
-    title: "ENTREGAMOS CON PRECISIÓN Y CUIDADO",
-    description: "Los gestores de proyecto aseguran una colaboración fluida, ciclos de retroalimentación oportunos y comunicación clara. Recibirás pautas de marca completas y activos listos para usar para lanzar con confianza."
+    title: "CONSEGNIAMO CON PRECISIONE E CURA",
+    description: "I project manager assicurano una collaborazione fluida, cicli di feedback tempestivi e comunicazione chiara. Riceverai linee guida complete del brand e asset pronti all'uso per lanciare con fiducia."
   }
 ];
 
@@ -41,7 +41,7 @@ export default function ValueProposition() {
           className="text-[#FFFBFB] leading-[1.1] text-center mb-20 max-w-5xl mx-auto"
           style={{ fontSize: '5.5rem' }}
         >
-          DISEÑADORES APASIONADOS APORTAN IDEAS INNOVADORAS Y FRESCAS
+          DESIGNER APPASSIONATI PORTANO IDEE INNOVATIVE E FRESCHE
         </motion.h2>
 
         {/* Grid 2x2 */}

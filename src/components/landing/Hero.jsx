@@ -25,9 +25,9 @@ export default function Hero() {
           className="text-[#FFFBFB] leading-[0.9]"
           style={{ fontSize: '5.5rem' }}
         >
-          DONDE LAS
+          DOVE LE
           <br />
-          IDEAS TOMAN
+          IDEE PRENDONO
           <br />
           <span className="text-[#FFE77A]">FORMA</span>
         </motion.h1>
@@ -43,7 +43,7 @@ export default function Hero() {
           className="text-[#FFFBFB] max-w-md font-semibold"
           style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
         >
-          Transformamos ideas en experiencias digitales únicas. Sin plantillas. Sin genéricos. Solo código que representa tu identidad.
+          Trasformiamo idee in esperienze digitali uniche. Niente template. Niente generico. Solo codice che rappresenta la tua identità.
         </motion.p>
 
         {/* Enlaces - Abajo derecha */}
@@ -57,13 +57,13 @@ export default function Hero() {
             href="#proyectos"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Nuestros Proyectos ↘
+            I Nostri Progetti ↘
           </a>
           <a
             href="#servicios"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            Explorar Servicios ↘
+            Scopri i Servizi ↘
           </a>
         </motion.div>
       </div>

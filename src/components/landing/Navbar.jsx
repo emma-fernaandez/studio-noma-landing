@@ -6,10 +6,10 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');
 
   const navLinks = [
-    { name: 'About', href: '#valores' },
-    { name: 'Works', href: '#proyectos' },
-    { name: 'Services', href: '#servicios' },
-    { name: 'Contact', href: '#contacto' },
+    { name: 'Chi Siamo', href: '#valores' },
+    { name: 'Lavori', href: '#proyectos' },
+    { name: 'Servizi', href: '#servicios' },
+    { name: 'Contatti', href: '#contacto' },
   ];
 
   return (

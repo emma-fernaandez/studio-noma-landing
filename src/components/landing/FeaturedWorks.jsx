@@ -69,13 +69,13 @@ export default function FeaturedWorks() {
       {/* Header */}
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-6xl md:text-7xl text-[#FFFBFB]">
-          FEATURED WORKS
+          LAVORI IN EVIDENZA
         </h2>
         <a
           href="#contacto"
           className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2"
         >
-          WORK WITH ME ↘
+          LAVORA CON ME ↘
         </a>
       </div>
 

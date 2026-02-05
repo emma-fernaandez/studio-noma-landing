@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Top: Contact CTA */}
         <div className="mb-20">
           <h2 className="text-5xl md:text-7xl mb-6">
-            LET'S GET CREATIVE<br />IN YOUR SURROUNDINGS
+            CREIAMO QUALCOSA<br />DI STRAORDINARIO
           </h2>
           <a
             href="mailto:hello@studionoma.com"
@@ -39,7 +39,7 @@ export default function Footer() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
           >
-            BACK TO TOP ↗
+            TORNA SU ↗
           </button>
         </div>
       </div>

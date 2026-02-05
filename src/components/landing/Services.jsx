@@ -3,29 +3,29 @@ import { motion, useInView } from 'framer-motion';
 
 const services = [
   {
-    level: "NIVEL 1",
+    level: "LIVELLO 1",
     title: "LANDING / ONE-PAGE",
-    description: "SITIOS DE UNA PÁGINA OPTIMIZADOS. RÁPIDOS, EFECTIVOS, PROFESIONALES. IDEAL PARA LANZAMIENTOS, PRODUCTOS ESPECÍFICOS O PRESENCIA INICIAL.",
+    description: "SITI A PAGINA SINGOLA OTTIMIZZATI. VELOCI, EFFICACI, PROFESSIONALI. IDEALE PER LANCI, PRODOTTI SPECIFICI O PRESENZA INIZIALE.",
     price: "800€ - 2.500€",
-    time: "1-2 SEMANAS",
-    features: ["DISEÑO RESPONSIVE", "SEO BÁSICO", "OPTIMIZACIÓN DE VELOCIDAD", "FORMULARIO DE CONTACTO"]
+    time: "1-2 SETTIMANE",
+    features: ["DESIGN RESPONSIVE", "SEO BASE", "OTTIMIZZAZIONE VELOCITÀ", "MODULO DI CONTATTO"]
   },
   {
-    level: "NIVEL 2",
+    level: "LIVELLO 2",
     title: "SITO COMPLETO",
-    description: "SITIOS MULTI-PÁGINA CON ARQUITECTURA COMPLETA Y FUNCIONALIDADES AVANZADAS. PARA EMPRESAS QUE NECESITAN UNA PRESENCIA DIGITAL ROBUSTA.",
+    description: "SITI MULTI-PAGINA CON ARCHITETTURA COMPLETA E FUNZIONALITÀ AVANZATE. PER AZIENDE CHE NECESSITANO UNA PRESENZA DIGITALE SOLIDA.",
     price: "3.000€ - 10.000€+",
-    time: "3-8 SEMANAS",
-    features: ["MÚLTIPLES PÁGINAS", "CMS INTEGRADO", "ANIMACIONES PERSONALIZADAS", "INTEGRACIONES AVANZADAS"],
+    time: "3-8 SETTIMANE",
+    features: ["PAGINE MULTIPLE", "CMS INTEGRATO", "ANIMAZIONI PERSONALIZZATE", "INTEGRAZIONI AVANZATE"],
     featured: true
   },
   {
-    level: "NIVEL 3",
+    level: "LIVELLO 3",
     title: "MANUTENZIONE",
-    description: "SOPORTE CONTINUO, ACTUALIZACIONES Y OPTIMIZACIONES. TU SITIO SIEMPRE ACTUALIZADO, SEGURO Y EVOLUCIONANDO.",
-    price: "50€ - 500€/MES",
+    description: "SUPPORTO CONTINUO, AGGIORNAMENTI E OTTIMIZZAZIONI. IL TUO SITO SEMPRE AGGIORNATO, SICURO E IN EVOLUZIONE.",
+    price: "50€ - 500€/MESE",
     time: "CONTINUO",
-    features: ["ACTUALIZACIONES DE SEGURIDAD", "BACKUPS REGULARES", "SOPORTE PRIORITARIO", "MEJORAS INCREMENTALES"]
+    features: ["AGGIORNAMENTI DI SICUREZZA", "BACKUP REGOLARI", "SUPPORTO PRIORITARIO", "MIGLIORAMENTI INCREMENTALI"]
   }
 ];
 
@@ -46,13 +46,13 @@ export default function Services() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
             <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
-              SERVICIOS
+              SERVIZI
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
-            NUESTROS
+            I NOSTRI
             <br />
-            <span className="text-[#682DD6]/60">SERVICIOS</span>
+            <span className="text-[#682DD6]/60">SERVIZI</span>
           </h2>
         </motion.div>
 
@@ -110,7 +110,7 @@ export default function Services() {
                 href="#contacto"
                 className="inline-flex items-center gap-2 text-xs  transition-all duration-300 group-hover:gap-4 text-[#FFE77A] tracking-wider uppercase"
               >
-                CONSULTAR ↘
+                RICHIEDI INFO ↘
               </a>
             </motion.div>
           ))}

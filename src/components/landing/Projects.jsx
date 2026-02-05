@@ -5,37 +5,37 @@ const projects = [
   {
     number: "01",
     title: "WEB3 LANDING PAGE",
-    description: "PLATAFORMA DE LANZAMIENTO PARA PROYECTO BLOCKCHAIN CON ANIMACIONES 3D Y CONEXIÓN A WALLET.",
+    description: "PIATTAFORMA DI LANCIO PER PROGETTO BLOCKCHAIN CON ANIMAZIONI 3D E CONNESSIONE WALLET.",
     tags: ["REACT", "THREE.JS", "WEB3"],
     color: "#FFE77A",
     stats: [
-      { label: "TIEMPO", value: "2 SEMANAS" },
-      { label: "PÁGINAS", value: "1" },
+      { label: "TEMPO", value: "2 SETTIMANE" },
+      { label: "PAGINE", value: "1" },
       { label: "PERFORMANCE", value: "98/100" }
     ]
   },
   {
     number: "02",
     title: "CONSULTING APP",
-    description: "DASHBOARD COMPLETO PARA GESTIÓN DE CLIENTES Y PROYECTOS CON MÉTRICAS EN TIEMPO REAL.",
+    description: "DASHBOARD COMPLETA PER GESTIONE CLIENTI E PROGETTI CON METRICHE IN TEMPO REALE.",
     tags: ["NEXT.JS", "DASHBOARD", "API"],
     color: "#682DD6",
     stats: [
-      { label: "TIEMPO", value: "6 SEMANAS" },
-      { label: "PÁGINAS", value: "12" },
-      { label: "USUARIOS", value: "500+" }
+      { label: "TEMPO", value: "6 SETTIMANE" },
+      { label: "PAGINE", value: "12" },
+      { label: "UTENTI", value: "500+" }
     ]
   },
   {
     number: "03",
     title: "FURNITURE E-COMMERCE",
-    description: "TIENDA ONLINE MINIMALISTA CON VISTA 3D DE PRODUCTOS Y CHECKOUT OPTIMIZADO.",
+    description: "NEGOZIO ONLINE MINIMALISTA CON VISTA 3D DEI PRODOTTI E CHECKOUT OTTIMIZZATO.",
     tags: ["SHOPIFY", "3D", "E-COMMERCE"],
     color: "#FF4937",
     stats: [
-      { label: "TIEMPO", value: "4 SEMANAS" },
-      { label: "PRODUCTOS", value: "200+" },
-      { label: "CONVERSIÓN", value: "+35%" }
+      { label: "TEMPO", value: "4 SETTIMANE" },
+      { label: "PRODOTTI", value: "200+" },
+      { label: "CONVERSIONE", value: "+35%" }
     ]
   }
 ];
@@ -57,13 +57,13 @@ export default function Projects() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#FFE77A]" />
             <span className="text-[#FFE77A]/70 text-xs tracking-[0.3em] uppercase">
-              PROYECTOS DESTACADOS
+              PROGETTI IN EVIDENZA
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl  text-[#FFFBFB] leading-[0.9]  uppercase">
-            CASOS DE
+            CASI DI
             <br />
-            <span className="text-[#682DD6]/60">ÉXITO</span>
+            <span className="text-[#682DD6]/60">SUCCESSO</span>
           </h2>
         </motion.div>
 
@@ -126,7 +126,7 @@ export default function Projects() {
                   </div>
 
                   <button className="inline-flex items-center gap-3 text-[#FFE77A] text-sm  hover:gap-5 transition-all duration-300 uppercase tracking-wider">
-                    VER PROYECTO ↘
+                    VEDI PROGETTO ↘
                   </button>
                 </div>
 

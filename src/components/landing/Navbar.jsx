@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import logoSvg from '../../assets/logo.svg';
+import logoSvg from '../../assets/logo-secondary.svg';
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');

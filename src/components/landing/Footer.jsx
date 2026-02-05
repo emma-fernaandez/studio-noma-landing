@@ -32,7 +32,7 @@ export default function Footer() {
           <img
             src={logoPrincipal}
             alt="Studio Noma"
-            className="w-auto h-40 md:h-[20rem]"
+            className="w-full md:w-auto md:h-[20rem]"
           />
         </div>
 

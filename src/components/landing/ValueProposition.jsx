@@ -40,7 +40,7 @@ export default function ValueProposition() {
           transition={{ duration: 0.8 }}
           className="text-[#FFFBFB] leading-[1.1] text-center mb-12 md:mb-20 max-w-5xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-[5.5rem]"
         >
-          NON È SOLO UN SITO WEB<br />
+          NON È SOLO UN SITO WEB {' '}
           <span className="text-[#FF4937]">CREAMO UNA IDENTITÀ DIGITALE</span>
         </motion.h2>
 

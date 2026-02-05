@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section aria-label="Introduzione Studio NOMA" className="h-[82svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
+    <section aria-label="Introduzione Studio NOMA" className="h-[88svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]" style={{ paddingTop: '7rem' }}>
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none" style={{ top: '4rem' }}>
         <iframe
           src='https://my.spline.design/wavesanimation-be40o0F1JYDMtxMJW3gVOuxp/'
           width='100%'
@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* Parte inferior: Subtítulo izquierda, Enlaces derecha */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 mt-auto">
         {/* Subtítulo - Abajo izquierda */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}

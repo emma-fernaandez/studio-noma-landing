@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="px-6 md:px-12">
           <div className="flex md:grid md:grid-cols-2 items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="/" aria-label="Studio NOMA - Home" className="flex-shrink-0 relative z-[60]">
+            <a href="/" aria-label="Studio NOMA - Home" className="flex-shrink-0 relative z-[60]" style={{ lineHeight: '1.1rem' }}>
               <img
                 src={logoSvg}
                 alt="Studio NOMA"
@@ -33,7 +33,8 @@ export default function Navbar() {
 
             {/* Hamburger - Mobile */}
             <button
-              className="md:hidden text-[#FFFBFB] text-2xl relative z-[60]"
+              className="md:hidden text-[#FFFBFB] relative z-[60] p-0 m-0 leading-none"
+              style={{ fontSize: '2rem' }}
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
               aria-expanded={menuOpen}

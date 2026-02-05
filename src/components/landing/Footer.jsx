@@ -10,7 +10,7 @@ export default function Footer() {
             CREIAMO QUALCOSA<br />DI STRAORDINARIO
           </h2>
           <a
-            href="mailto:hello@studionoma.com"
+            href="mailto:hello@nomastudiodesign.com"
             className="text-lg sm:text-xl md:text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
           >
             HELLO@STUDIONOMA.COM

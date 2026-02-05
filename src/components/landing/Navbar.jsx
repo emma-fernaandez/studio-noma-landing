@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: 'Chi Siamo', href: '#equipo' },
     { name: 'Lavori', href: '#lavori' },
     { name: 'Valori', href: '#valori' },
-    { name: 'Contatti', href: 'mailto:hello@studionoma.com' },
+    { name: 'Contatti', href: 'mailto:hello@nomastudiodesign.com' },
   ];
 
   return (

@@ -15,6 +15,13 @@ export default function Footer() {
           >
             HELLO@NOMASTUDIODESIGN.COM
           </a>
+          <br />
+          <a
+            href="tel:+393281894575"
+            className="text-lg sm:text-xl md:text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
+          >
+            +39 328 189 4575
+          </a>
         </div>
 
         {/* Back to Top - mobile */}

@@ -73,6 +73,8 @@ export default function Team() {
                 className="bg-[#FFFBFB] rounded-sm overflow-hidden transition-all duration-300"
                 onMouseEnter={() => handleMouseEnter(member.name)}
                 onMouseLeave={() => handleMouseLeave(member.name)}
+                onTouchStart={() => handleMouseEnter(member.name)}
+                onTouchEnd={() => handleMouseLeave(member.name)}
               >
                 {/* Image Container with overlay */}
                 <div className="relative overflow-hidden" style={{ aspectRatio: '1/1.3' }}>

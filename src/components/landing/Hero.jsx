@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[#FFFBFB] leading-[0.9] text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem]"
+          className="text-[#FFFBFB] leading-[0.9] text-[3rem] md:text-6xl lg:text-[5.5rem]"
         >
           DOVE LE
           <br />
@@ -50,19 +50,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row justify-between gap-6"
+          className="flex justify-end"
         >
           <a
             href="#proyectos"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             I Nostri Progetti ↘
-          </a>
-          <a
-            href="#servicios"
-            className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
-          >
-            Scopri i Servizi ↘
           </a>
         </motion.div>
       </div>

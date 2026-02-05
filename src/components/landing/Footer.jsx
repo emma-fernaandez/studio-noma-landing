@@ -13,7 +13,7 @@ export default function Footer() {
             href="mailto:hello@nomastudiodesign.com"
             className="text-lg sm:text-xl md:text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
           >
-            HELLO@STUDIONOMA.COM
+            HELLO@NOMASTUDIODESIGN.COM
           </a>
         </div>
 

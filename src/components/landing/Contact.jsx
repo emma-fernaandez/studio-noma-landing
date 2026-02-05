@@ -38,7 +38,7 @@ export default function Contact() {
             >
               <Mail className="w-5 h-5" />
               <span className="text-sm">
-                HOLA@STUDIONOMA.COM
+                HELLO@NOMASTUDIODESIGN.COM
               </span>
               <span className="text-lg">↘</span>
             </a>

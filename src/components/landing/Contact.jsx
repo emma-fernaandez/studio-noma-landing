@@ -18,7 +18,7 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[7rem] xl:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-8 md:mb-16">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[9rem] text-[#FFFBFB] leading-[0.85] mb-8 md:mb-16">
             LAVORA
             <br />
             <span className="text-[#FFE77A]">

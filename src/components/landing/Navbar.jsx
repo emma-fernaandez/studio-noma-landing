@@ -21,7 +21,7 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-[#100E0E]"
     >
       <div className="px-6 md:px-12">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex md:grid md:grid-cols-2 items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
             <img
@@ -40,7 +40,7 @@ export default function Navbar() {
           </button>
 
           {/* Navigation Links - Desktop */}
-          <div className="hidden md:flex items-center gap-8 lg:gap-12">
+          <div className="hidden md:flex items-center justify-between">
             {navLinks.map((link) => (
               <a
                 key={link.name}

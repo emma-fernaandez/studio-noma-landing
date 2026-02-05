@@ -49,7 +49,7 @@ export default function Services() {
               SERVIZI
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#FFFBFB] leading-[0.9]">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-[#FFFBFB] leading-[0.9]">
             I NOSTRI
             <br />
             <span className="text-[#682DD6]/60">SERVIZI</span>

@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="flex flex-col">
         {/* Top: Contact CTA */}
         <div className="mb-20">
-          <h2 className="text-3xl sm:text-5xl md:text-7xl mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[5.5rem] mb-6">
             CREIAMO QUALCOSA<br />DI STRAORDINARIO
           </h2>
           <a
             href="mailto:hello@studionoma.com"
-            className="text-lg sm:text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
+            className="text-lg sm:text-xl md:text-2xl font-semibold transition-opacity duration-300 hover:opacity-60"
           >
             HELLO@STUDIONOMA.COM
           </a>
@@ -22,8 +22,7 @@ export default function Footer() {
           <img
             src={logoPrincipal}
             alt="Studio Noma"
-            className="w-auto"
-            style={{ height: 'auto', maxHeight: '20rem' }}
+            className="w-auto h-40 md:h-[20rem]"
           />
         </div>
 

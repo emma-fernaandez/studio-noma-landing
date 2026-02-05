@@ -68,7 +68,7 @@ export default function FeaturedWorks() {
     <section className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-16">
-        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-[#FFFBFB]">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-[#FFFBFB]">
           LAVORI IN EVIDENZA
         </h2>
         <a

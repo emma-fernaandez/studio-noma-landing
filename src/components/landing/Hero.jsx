@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[#FFFBFB] leading-[0.9] text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+          className="text-[#FFFBFB] leading-[0.9] text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem]"
         >
           DOVE LE
           <br />
@@ -39,7 +39,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[#FFFBFB] max-w-md font-semibold text-sm sm:text-base md:text-lg"
+          className="text-[#FFFBFB] max-w-md font-semibold text-sm sm:text-base md:text-xl"
+          style={{ lineHeight: '1.75rem' }}
         >
           Trasformiamo idee in esperienze digitali uniche. Niente template. Niente generico. Solo codice che rappresenta la tua identità.
         </motion.p>

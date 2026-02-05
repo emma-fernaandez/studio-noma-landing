@@ -95,7 +95,7 @@ export default function FeaturedWorks() {
           I NOSTRI PROGETTI
         </h2>
         <a
-          href="#contacto"
+          href="mailto:hello@nomastudiodesign.com"
           className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 flex items-center gap-2 flex-shrink-0"
         >
           CONTATTACI ↘

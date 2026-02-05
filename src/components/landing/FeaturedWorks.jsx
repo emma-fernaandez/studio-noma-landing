@@ -103,7 +103,11 @@ export default function FeaturedWorks() {
       </div>
 
       {/* Projects Row */}
-      <div className="relative overflow-hidden">
+      <div
+        className="relative overflow-hidden"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div
           ref={trackRef}
           className="flex gap-8 md:gap-12 animate-scroll-projects"
@@ -111,8 +115,6 @@ export default function FeaturedWorks() {
             animationPlayState: (isHovered || !isTabVisible) ? 'paused' : 'running',
             willChange: 'transform'
           }}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0 w-[280px] sm:w-[350px] md:w-[450px]">

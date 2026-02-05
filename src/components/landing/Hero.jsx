@@ -53,7 +53,7 @@ export default function Hero() {
           className="flex justify-end mt-6 md:mt-0"
         >
           <a
-            href="#proyectos"
+            href="#lavori"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             I Nostri Progetti ↘

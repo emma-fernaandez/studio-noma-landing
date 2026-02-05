@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Top: Contact CTA */}
         <div className="mb-8 md:mb-20">
           <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[5.5rem] mb-6">
-            CREIAMO QUALCOSA<br />DI STRAORDINARIO
+            CREIAMO QUALCOSA<br />DI <span className="text-[#682DD6]">STRAORDINARIO</span>
           </h2>
           <a
             href="mailto:hello@nomastudiodesign.com"

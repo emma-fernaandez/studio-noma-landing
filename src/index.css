@@ -177,6 +177,12 @@
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 12.5s linear infinite;
+    animation: scroll-projects 8s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-scroll-projects {
+      animation: scroll-projects 12.5s linear infinite;
+    }
   }
 }

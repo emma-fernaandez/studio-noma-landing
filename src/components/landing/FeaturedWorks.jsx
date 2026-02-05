@@ -28,36 +28,43 @@ export default function FeaturedWorks() {
       name: 'LATERRAZA',
       tags: ['CODE', 'RISTORANTI', 'MENU'],
       image: laterraza,
+      url: 'https://la-terraza.netlify.app/',
     },
     {
       name: 'DANCE',
       tags: ['WEBFLOW', 'CREATIVE', 'MOVILITY'],
       image: dance,
+      url: 'https://danceco-portfolio.webflow.io/',
     },
     {
       name: 'HANNIBAL LAGUNA COLLECTION',
       tags: ['SHOPIFY', 'ECOMMERCE', 'MODA'],
       image: HLC,
+      url: 'https://hanniballagunacollection.es/',
     },
     {
       name: 'BDP BURGER',
       tags: ['WEBFLOW', 'RISTORANTI', 'MENU'],
       image: bdp,
+      url: 'https://www.bdp-burger.com/',
     },
     {
       name: 'FABERLAB',
       tags: ['CODE', 'CORPORATE', 'LAB'],
       image: faberlab,
+      url: 'https://faberlabstudio.com/',
     },
     {
       name: 'BEANYWOOD CAFE',
       tags: ['SHOPIFY', 'ECOMMERCE', 'CAFE'],
       image: beanywood,
+      url: 'https://beanywoodcafe.com/',
     },
     {
       name: 'SUGARPAPI',
       tags: ['SHOPIFY', 'ECOMMERCE', 'CREATIVE'],
       image: sugarpapi,
+      url: 'https://sugarpapi.es/',
     },
   ];
 
@@ -93,13 +100,15 @@ export default function FeaturedWorks() {
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0 w-[280px] sm:w-[350px] md:w-[450px]">
               {/* Project Image */}
-              <div className="w-full mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9', borderRadius: '5px' }}>
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <div className="w-full mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9', borderRadius: '5px' }}>
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+              </a>
 
               {/* Project Name */}
               <h3 className="text-[#FFFBFB] text-2xl mb-4 font-bold">

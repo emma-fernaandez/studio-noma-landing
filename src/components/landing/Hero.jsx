@@ -2,14 +2,15 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="h-[82svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
+    <section aria-label="Introduzione Studio NOMA" className="h-[82svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
         <iframe
           src='https://my.spline.design/wavesanimation-be40o0F1JYDMtxMJW3gVOuxp/'
           width='100%'
           height='100%'
-          title="Spline 3D Background"
+          title="Animazione 3D decorativa di sfondo"
+          aria-hidden="true"
           className="w-full h-full border-0"
           style={{ border: 0, pointerEvents: 'none' }}
         />
@@ -56,7 +57,8 @@ export default function Hero() {
             href="#lavori"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
-            I Nostri Progetti ↘
+            <span aria-hidden="true">I Nostri Progetti ↘</span>
+            <span className="sr-only">Vai ai nostri progetti in evidenza</span>
           </a>
         </motion.div>
       </div>

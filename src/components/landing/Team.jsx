@@ -82,7 +82,7 @@ export default function Team() {
   };
 
   return (
-    <section id="equipo" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20">
+    <section id="equipo" aria-label="Il nostro team" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20">
       <div>
         {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
@@ -111,7 +111,7 @@ export default function Team() {
                   {/* Static Image */}
                   <img
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name}, ${member.role} di Studio NOMA`}
                     className={`w-full h-full object-cover object-top transition-opacity duration-100 ${
                       playingVideo === member.name ? 'opacity-0' : 'opacity-100'
                     }`}
@@ -128,6 +128,7 @@ export default function Team() {
                       muted
                       playsInline
                       preload="auto"
+                      aria-label={`Animazione di ${member.name}`}
                     >
                       <source src={member.video} type="video/mp4" />
                     </video>

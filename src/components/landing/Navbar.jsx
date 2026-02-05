@@ -22,10 +22,10 @@ export default function Navbar() {
       <div className="px-6 md:px-12">
         <div className="flex md:grid md:grid-cols-2 items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex-shrink-0">
+          <a href="/" aria-label="Studio NOMA - Home" className="flex-shrink-0">
             <img
               src={logoSvg}
-              alt="Studio Noma"
+              alt="Studio NOMA"
               className="h-4 md:h-5 w-auto"
             />
           </a>
@@ -34,6 +34,9 @@ export default function Navbar() {
           <button
             className="md:hidden text-[#FFFBFB] text-2xl"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
           >
             {menuOpen ? '✕' : '☰'}
           </button>
@@ -57,9 +60,12 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden pb-6 flex flex-col gap-4"
+            role="navigation"
+            aria-label="Menu mobile"
           >
             {navLinks.map((link) => (
               <a

@@ -88,7 +88,7 @@ export default function FeaturedWorks() {
   const projects = [...baseProjects, ...baseProjects];
 
   return (
-    <section id="lavori" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section id="lavori" aria-label="Lavori in evidenza" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-16">
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-[#FFFBFB]">
@@ -119,11 +119,12 @@ export default function FeaturedWorks() {
           {projects.map((project, index) => (
             <div key={`${project.name}-${index}`} className="flex-shrink-0 w-[280px] sm:w-[350px] md:w-[450px]">
               {/* Project Image */}
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <a href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Vedi il progetto ${project.name}`}>
                 <div className="w-full mb-6 overflow-hidden" style={{ aspectRatio: '4.1/3.9', borderRadius: '5px' }}>
                   <img
                     src={project.image}
-                    alt={project.name}
+                    alt={`${project.name} - ${project.tags.join(', ')}`}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                 </div>

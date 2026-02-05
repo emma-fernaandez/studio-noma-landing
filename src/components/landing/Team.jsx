@@ -112,7 +112,7 @@ export default function Team() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className={`w-full h-full object-cover object-top transition-opacity duration-300 ${
+                    className={`w-full h-full object-cover object-top transition-opacity duration-100 ${
                       playingVideo === member.name ? 'opacity-0' : 'opacity-100'
                     }`}
                   />
@@ -121,7 +121,7 @@ export default function Team() {
                   {member.video && (
                     <video
                       ref={(el) => (videoRefs.current[member.name] = el)}
-                      className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-300 ${
+                      className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-100 ${
                         playingVideo === member.name ? 'opacity-100' : 'opacity-0'
                       }`}
                       onEnded={() => handleVideoEnd(member.name)}

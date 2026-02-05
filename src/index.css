@@ -166,23 +166,17 @@
     animation: scroll-badges 24s linear infinite;
   }
 
-  /* Projects loop animation - shows all 7 projects */
+  /* Projects loop animation - pixel-perfect using measured CSS variable */
   @keyframes scroll-projects {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(var(--scroll-distance));
     }
   }
 
   .animate-scroll-projects {
-    animation: scroll-projects 25s linear infinite;
-  }
-
-  @media (min-width: 768px) {
-    .animate-scroll-projects {
-      animation: scroll-projects 30s linear infinite;
-    }
+    animation: scroll-projects 24s linear infinite;
   }
 }

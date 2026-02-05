@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import laterraza from '../../assets/mokups/laterraza.jpg';
 import dance from '../../assets/mokups/dance.jpg';
 import HLC from '../../assets/mokups/HLC.jpg';
@@ -10,6 +10,7 @@ import sugarpapi from '../../assets/mokups/sugarpapi.jpg';
 export default function FeaturedWorks() {
   const [isHovered, setIsHovered] = useState(false);
   const [isTabVisible, setIsTabVisible] = useState(true);
+  const trackRef = useRef(null);
 
   useEffect(() => {
     const handleVisibilityChange = () => {
@@ -21,6 +22,21 @@ export default function FeaturedWorks() {
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
+  }, []);
+
+  // Measure exact pixel width of first half for seamless loop
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const updateScrollDistance = () => {
+      const halfWidth = track.scrollWidth / 2;
+      track.style.setProperty('--scroll-distance', `-${halfWidth}px`);
+    };
+
+    updateScrollDistance();
+    window.addEventListener('resize', updateScrollDistance);
+    return () => window.removeEventListener('resize', updateScrollDistance);
   }, []);
 
   const baseProjects = [
@@ -89,6 +105,7 @@ export default function FeaturedWorks() {
       {/* Projects Row */}
       <div className="relative overflow-hidden">
         <div
+          ref={trackRef}
           className="flex gap-8 md:gap-12 animate-scroll-projects"
           style={{
             animationPlayState: (isHovered || !isTabVisible) ? 'paused' : 'running',

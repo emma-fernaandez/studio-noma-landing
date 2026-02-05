@@ -88,11 +88,11 @@ export default function FeaturedWorks() {
   const projects = [...baseProjects, ...baseProjects];
 
   return (
-    <section id="lavori" aria-label="Lavori in evidenza" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section id="progetti" aria-label="I nostri progetti" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-16">
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-[#FFFBFB]">
-          LAVORI IN EVIDENZA
+          I NOSTRI PROGETTI
         </h2>
         <a
           href="#contacto"

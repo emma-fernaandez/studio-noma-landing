@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Chi Siamo', href: '#equipo' },
-    { name: 'Lavori', href: '#lavori' },
+    { name: 'Progetti', href: '#progetti' },
     { name: 'Valori', href: '#valori' },
     { name: 'Contatti', href: 'mailto:hello@nomastudiodesign.com' },
   ];

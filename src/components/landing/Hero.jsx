@@ -54,7 +54,7 @@ export default function Hero() {
           className="flex justify-end mt-6 md:mt-0"
         >
           <a
-            href="#lavori"
+            href="#progetti"
             className="group inline-flex items-center gap-2 text-[#FFFBFB] text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             <span aria-hidden="true">I Nostri Progetti ↘</span>

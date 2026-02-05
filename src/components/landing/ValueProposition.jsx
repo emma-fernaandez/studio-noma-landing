@@ -6,22 +6,22 @@ const features = [
   {
     number: "01",
     title: "INIZIAMO CON UNA SCOPERTA PROFONDA",
-    description: "Il nostro team raccoglie informazioni che diventano la base per un design significativo e rilevante. Questa fase stabilisce la direzione per un'identità forte e autentica."
+    description: "Ogni progetto inizia con un dialogo reale. Capiamo chi sei, cosa fai e quali risultati vuoi ottenere prima di scrivere una sola riga di codice."
   },
   {
     number: "02",
     title: "DIAMO FORMA AL LINGUAGGIO VISIVO",
-    description: "I nostri designer e direttori artistici lavorano insieme per creare loghi, elementi del brand e sistemi visivi. Dalla tipografia alle palette di colori, ogni elemento è costruito per riflettere la personalità del tuo marchio."
+    description: "Non disegniamo per fare bella figura. Disegniamo per chiarire. Tutto ciò che vedi esiste per eliminare dubbi, facilitare decisioni e far sentire il visitatore nel posto giusto."
   },
   {
     number: "03",
     title: "DOVE IL MOVIMENTO INCONTRA L'ESPRESSIONE",
-    description: "Per dare vita al tuo brand, i motion designer e gli illustratori creano asset visivi che aggiungono profondità e carattere. Animazioni, icone e illustrazioni sono personalizzate per supportare la narrazione e il coinvolgimento."
+    description: "Crediamo che l'esperienza digitale debba sentirsi naturale, quasi invisibile, lasciando spazio a ciò che conta davvero. Ogni dettaglio comunica. Ogni movimento ha un senso."
   },
   {
     number: "04",
     title: "CONSEGNIAMO CON PRECISIONE E CURA",
-    description: "I project manager assicurano una collaborazione fluida, cicli di feedback tempestivi e comunicazione chiara. Riceverai linee guida complete del brand e asset pronti all'uso per lanciare con fiducia."
+    description: "Non corriamo: eliminiamo il superfluo. Il risultato è velocità naturale, qualità preservata e tempi che rispettano il tuo business."
   }
 ];
 
@@ -40,7 +40,8 @@ export default function ValueProposition() {
           transition={{ duration: 0.8 }}
           className="text-[#FFFBFB] leading-[1.1] text-center mb-12 md:mb-20 max-w-5xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-[5.5rem]"
         >
-          DESIGNER APPASSIONATI PORTANO IDEE INNOVATIVE E FRESCHE
+          NON È SOLO UN SITO WEB<br />
+          <span className="text-[#FF4937]">CREAMO UNA IDENTITÀ DIGITALE</span>
         </motion.h2>
 
         {/* Grid 2x2 */}

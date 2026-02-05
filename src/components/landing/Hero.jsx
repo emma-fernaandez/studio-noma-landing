@@ -43,7 +43,7 @@ export default function Hero() {
           className="text-[#FFFBFB] max-w-md font-semibold text-sm sm:text-base md:text-xl"
           style={{ lineHeight: '1.75rem' }}
         >
-          Trasformiamo idee in esperienze digitali uniche. Niente template. Niente generico. Solo codice che rappresenta la tua identità.
+          TRASFORMIAMO IL TUO BRAND IN UN'ESPERIENZA DIGITALE UNICA. NESSUN TEMPLATE. NIENTE DI GENERICO. SOLO CODICE CHE RAPPRESENTA LA TUA IDENTITÀ.
         </motion.p>
 
         {/* Enlaces - Abajo derecha */}

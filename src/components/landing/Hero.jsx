@@ -4,15 +4,15 @@ export default function Hero() {
   return (
     <section aria-label="Introduzione Studio NOMA" className="h-[88svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]" style={{ paddingTop: '7rem' }}>
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none" style={{ top: '4rem' }}>
+      <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none overflow-hidden" style={{ top: '4rem', bottom: '-3rem' }}>
         <iframe
           src='https://my.spline.design/wavesanimation-be40o0F1JYDMtxMJW3gVOuxp/'
           width='100%'
-          height='100%'
+          height='110%'
           title="Animazione 3D decorativa di sfondo"
           aria-hidden="true"
-          className="w-full h-full border-0"
-          style={{ border: 0, pointerEvents: 'none' }}
+          className="w-full border-0"
+          style={{ border: 0, pointerEvents: 'none', height: '110%' }}
         />
       </div>
 

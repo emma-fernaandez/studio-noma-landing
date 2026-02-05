@@ -33,8 +33,8 @@ export default function Navbar() {
 
             {/* Hamburger - Mobile */}
             <button
-              className="md:hidden text-[#FFFBFB] relative z-[60] p-0 m-0 leading-none"
-              style={{ fontSize: '2rem' }}
+              className="md:hidden text-[#FFFBFB] relative z-[60] leading-[0] flex items-center justify-center"
+              style={{ fontSize: '2rem', padding: 0, margin: 0, height: '1rem' }}
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
               aria-expanded={menuOpen}

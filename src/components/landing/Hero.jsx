@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* Parte inferior: Subtítulo izquierda, Enlaces derecha */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 mt-auto">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 mt-auto pt-16 md:pt-0">
         {/* Subtítulo - Abajo izquierda */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import emmaPortrait from '../../assets/emma-portrait.png';
 import nicolePortrait from '../../assets/nicole-portrait.png';
 import chiaraPortrait from '../../assets/chiara-portrait.png';
@@ -10,6 +10,7 @@ import chiaraAnimation from '../../assets/chiara-animation.mp4';
 export default function Team() {
   const [playingVideo, setPlayingVideo] = useState(null);
   const videoRefs = useRef({});
+  const isTouchDevice = useRef(false);
 
   const team = [
     {
@@ -32,7 +33,7 @@ export default function Team() {
     },
   ];
 
-  const handleMouseEnter = (memberName) => {
+  const playVideo = (memberName) => {
     const member = team.find(m => m.name === memberName);
     if (member.video && videoRefs.current[memberName]) {
       setPlayingVideo(memberName);
@@ -41,13 +42,39 @@ export default function Team() {
     }
   };
 
-  const handleMouseLeave = (memberName) => {
+  const stopVideo = (memberName) => {
     const member = team.find(m => m.name === memberName);
     if (member.video && videoRefs.current[memberName]) {
       videoRefs.current[memberName].pause();
       videoRefs.current[memberName].currentTime = 0;
       setPlayingVideo(null);
     }
+  };
+
+  // Desktop: hover
+  const handleMouseEnter = (memberName) => {
+    if (isTouchDevice.current) return;
+    playVideo(memberName);
+  };
+
+  const handleMouseLeave = (memberName) => {
+    if (isTouchDevice.current) return;
+    stopVideo(memberName);
+  };
+
+  // Mobile/tablet: click to toggle
+  const handleClick = useCallback((memberName) => {
+    if (!isTouchDevice.current) return;
+    if (playingVideo === memberName) {
+      stopVideo(memberName);
+    } else {
+      if (playingVideo) stopVideo(playingVideo);
+      playVideo(memberName);
+    }
+  }, [playingVideo]);
+
+  const handleTouchStart = () => {
+    isTouchDevice.current = true;
   };
 
   const handleVideoEnd = (memberName) => {
@@ -73,8 +100,8 @@ export default function Team() {
                 className="bg-[#FFFBFB] rounded-sm overflow-hidden transition-all duration-300"
                 onMouseEnter={() => handleMouseEnter(member.name)}
                 onMouseLeave={() => handleMouseLeave(member.name)}
-                onTouchStart={() => handleMouseEnter(member.name)}
-                onTouchEnd={() => handleMouseLeave(member.name)}
+                onTouchStart={handleTouchStart}
+                onClick={() => handleClick(member.name)}
               >
                 {/* Image Container with overlay */}
                 <div className="relative overflow-hidden" style={{ aspectRatio: '1/1.3' }}>

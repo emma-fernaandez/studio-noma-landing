@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="h-[70svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
+    <section className="h-[82svh] md:h-screen flex flex-col justify-between relative px-6 md:px-12 pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-[#100E0E]">
       {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none">
         <iframe

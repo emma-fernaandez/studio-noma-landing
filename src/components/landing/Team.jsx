@@ -127,6 +127,7 @@ export default function Team() {
                       onEnded={() => handleVideoEnd(member.name)}
                       muted
                       playsInline
+                      preload="auto"
                     >
                       <source src={member.video} type="video/mp4" />
                     </video>

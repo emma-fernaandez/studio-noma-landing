@@ -18,7 +18,7 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="fixed top-0 left-0 right-0 z-50 bg-[#100E0E]"
+        className="fixed top-0 left-0 right-0 z-[60] bg-[#100E0E]"
       >
         <div className="px-6 md:px-12">
           <div className="flex md:grid md:grid-cols-2 items-center justify-between h-16 md:h-20">

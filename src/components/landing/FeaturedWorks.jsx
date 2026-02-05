@@ -26,37 +26,37 @@ export default function FeaturedWorks() {
   const baseProjects = [
     {
       name: 'LATERRAZA',
-      tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
+      tags: ['CODE', 'RISTORANTI', 'MENU'],
       image: laterraza,
     },
     {
       name: 'DANCE',
-      tags: ['WEBFLOW', 'GSAP', 'CREATIVE'],
+      tags: ['WEBFLOW', 'CREATIVE', 'MOVILITY'],
       image: dance,
     },
     {
       name: 'HANNIBAL LAGUNA COLLECTION',
-      tags: ['WEBFLOW', 'GSAP', 'CORPORATE'],
+      tags: ['SHOPIFY', 'ECOMMERCE', 'MODA'],
       image: HLC,
     },
     {
       name: 'BDP BURGER',
-      tags: ['WEBFLOW', 'GSAP', 'PORTFOLIO'],
+      tags: ['WEBFLOW', 'RISTORANTI', 'MENU'],
       image: bdp,
     },
     {
       name: 'FABERLAB',
-      tags: ['WEBFLOW', 'GSAP', 'TECH'],
+      tags: ['CODE', 'CORPORATE', 'LAB'],
       image: faberlab,
     },
     {
       name: 'BEANYWOOD CAFE',
-      tags: ['WEBFLOW', 'GSAP', 'E-COMMERCE'],
+      tags: ['SHOPIFY', 'ECOMMERCE', 'CAFE'],
       image: beanywood,
     },
     {
       name: 'SUGARPAPI',
-      tags: ['WEBFLOW', 'GSAP', 'CREATIVE'],
+      tags: ['SHOPIFY', 'ECOMMERCE', 'CREATIVE'],
       image: sugarpapi,
     },
   ];
@@ -65,7 +65,7 @@ export default function FeaturedWorks() {
   const projects = [...baseProjects, ...baseProjects];
 
   return (
-    <section className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
+    <section id="lavori" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20 bg-[#100E0E]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-16">
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-[#FFFBFB]">

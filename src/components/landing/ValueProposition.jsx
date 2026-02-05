@@ -30,7 +30,7 @@ export default function ValueProposition() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-16 md:py-32 px-6 md:px-12 relative">
+    <section id="valori" className="py-16 md:py-32 px-6 md:px-12 relative scroll-mt-20">
       <div>
         {/* Título centrado */}
         <motion.h2

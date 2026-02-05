@@ -3,14 +3,13 @@ import { motion } from 'framer-motion';
 import logoSvg from '../../assets/logo.svg';
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Chi Siamo', href: '#valores' },
-    { name: 'Lavori', href: '#proyectos' },
-    { name: 'Servizi', href: '#servicios' },
-    { name: 'Contatti', href: '#contacto' },
+    { name: 'Chi Siamo', href: '#equipo' },
+    { name: 'Lavori', href: '#lavori' },
+    { name: 'Valori', href: '#valori' },
+    { name: 'Contatti', href: 'mailto:hello@studionoma.com' },
   ];
 
   return (
@@ -45,17 +44,11 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setActiveLink(link.name)}
-                className="relative text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
+                onClick={() => {}}
+                className="relative text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 no-underline"
+                style={{ textDecoration: 'none' }}
               >
                 {link.name}
-                {activeLink === link.name && (
-                  <motion.div
-                    layoutId="activeLink"
-                    className="absolute -bottom-1 left-0 right-0 h-px bg-[#FFE77A]"
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
               </a>
             ))}
           </div>
@@ -72,8 +65,9 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => { setActiveLink(link.name); setMenuOpen(false); }}
-                className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60"
+                onClick={() => setMenuOpen(false)}
+                className="text-[#FFFBFB] text-sm font-semibold transition-opacity duration-300 hover:opacity-60 no-underline"
+                style={{ textDecoration: 'none' }}
               >
                 {link.name}
               </a>

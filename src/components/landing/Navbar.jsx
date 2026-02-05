@@ -6,9 +6,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Chi Siamo', href: '#equipo' },
-    { name: 'Progetti', href: '#progetti' },
     { name: 'Valori', href: '#valori' },
+    { name: 'Progetti', href: '#progetti' },
+    { name: 'Chi Siamo', href: '#equipo' },
     { name: 'Contatti', href: 'mailto:hello@nomastudiodesign.com' },
   ];
 
